@@ -1,0 +1,5 @@
+alias ll='ls -l'
+alias rspec='nocorrect rspec'
+alias rv="ruby -v | grep -o '[0-9.]*p[0-9]*'"
+alias irssi='nocorrect irssi'
+

@@ -1,0 +1,33 @@
+# Emacs
+\#*#
+
+# VIm
+*.swp
+*.swo
+
+# C-like
+*.obj
+*.o
+
+# Java, IntelliJ
+.idea/
+out/
+target/
+*.iml
+*.iws
+*.class
+
+# Rails
+*.sqlite3
+config/database.yml
+
+# Logs, temps and misc
+log/
+tmp/
+*.log
+*.tmp
+*.out
+
+# Mac
+.DS_STORE
+
