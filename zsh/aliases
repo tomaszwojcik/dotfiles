@@ -1,5 +1,8 @@
 alias ll='ls -l'
-alias rspec='nocorrect rspec'
 alias rv='rvm current'
+
+alias vim='mvim -v'
+
 alias irssi='nocorrect irssi'
+alias rspec='nocorrect rspec'
 alias cmake='nocorrect cmake'
