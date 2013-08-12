@@ -1,0 +1,53 @@
+call pathogen#infect()
+call pathogen#helptags()
+
+syntax on
+filetype plugin indent on
+colorscheme jellybeans
+
+" MacVim specific options
+set clipboard=unnamed
+
+" Remove annoying warning when trying to move to the next/previous buffer and
+" there are changes in the current buffer
+set hidden
+
+" Set vim-gitgutter colors and symbols
+let g:gitgutter_sign_removed = '-'
+let g:gitgutter_sign_modified = '*'
+let g:gitgutter_sign_modified_removed = '!'
+
+highlight GitGutterChange ctermfg=yellow
+
+" Don't pollute dirs with swap and temporary files
+set backupdir=~/.vim_bck
+set directory=~/.vim_tmp
+
+" Set pwd to the current dir
+" autochdir can fail with some plugins
+" set autochdir
+" Alternatively use this line if autochdir fails:
+" autocmd BufEnter * silent! lcd %:p:h
+
+" Intendation
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+
+" Intendation
+if has("autocmd")
+  filetype on
+  autocmd FileType ruby,eruby setlocal ts=2 sts=2 sw=2 noexpandtab
+end
+
+" Enable line numbers and toggling between absolute and relative numbering
+" (C-n)
+set number
+function! NumberToggle()
+	if(&relativenumber == 1)
+		set number
+	else
+		set relativenumber
+	endif
+endfunc
+nnoremap <C-n> :call NumberToggle()<cr>
