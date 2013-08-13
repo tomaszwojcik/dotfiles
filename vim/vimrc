@@ -19,6 +19,17 @@ let g:gitgutter_sign_modified_removed = '!'
 
 highlight GitGutterChange ctermfg=yellow
 
+" :E invokes :e[dit] with prefixed path
+" Assume that we have started vim in the work/ dir and then we have navigated to 
+" the test/ subdir. :e <name> will invoke edit for work/<name>, however :E will invoke
+" edit for work/test/<name>
+command! -nargs=1 E call EditAtCurrentPath(<f-args>)
+
+function! EditAtCurrentPath(filename)
+    let l:path=expand('%:p:h').'/'.a:filename
+    execute 'edit' l:path
+endfunction
+
 " Don't pollute dirs with swap and temporary files
 set backupdir=~/.vim_bck
 set directory=~/.vim_tmp
