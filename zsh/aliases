@@ -3,6 +3,7 @@ alias rv='rvm current'
 
 alias vim='mvim -v'
 
+alias ag='nocorrect ag'
 alias mc='nocorrect mc'
 alias irssi='nocorrect irssi'
 alias rspec='nocorrect rspec'
