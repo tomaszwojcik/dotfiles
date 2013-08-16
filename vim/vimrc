@@ -8,6 +8,15 @@ colorscheme jellybeans
 " MacVim specific options
 set clipboard=unnamed
 
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+
+let mapleader = ','
+map <leader>e :e %%
+
+" vim-ruby-debugger options
+let g:ruby_debugger_progname = 'mvim'
+let g:ruby_debugger_debug_mode = 1
+
 " Remove annoying warning when trying to move to the next/previous buffer and
 " there are changes in the current buffer
 set hidden
@@ -61,7 +70,7 @@ function! NumberToggle()
 	else
 		let &number = 0
                 let &relativenumber = 1
-	endif
+        endif
 endfunc
 
 nnoremap <C-n> :call NumberToggle()<cr>
