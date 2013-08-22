@@ -11,6 +11,7 @@ set cursorline
 set clipboard=unnamed
 
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
+let g:agprg = 'ag --nogroup --nocolor --column'
 
 let mapleader = ','
 map <leader>e :e %%
@@ -53,8 +54,8 @@ set directory=~/.vim_tmp
 
 " Intendation
 set expandtab
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 
 " Intendation
 if has("autocmd")
