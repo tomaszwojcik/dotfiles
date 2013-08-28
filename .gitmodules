@@ -1,0 +1,3 @@
+[submodule "vim/bundle/vim-rspec"]
+	path = vim/bundle/vim-rspec
+	url = https://github.com/thoughtbot/vim-rspec.git
