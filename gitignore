@@ -4,6 +4,7 @@
 # VIm
 *.swp
 *.swo
+.netrwhist
 
 # C-like
 *.obj

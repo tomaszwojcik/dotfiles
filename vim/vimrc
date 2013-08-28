@@ -1,3 +1,5 @@
+set nocompatible
+
 call pathogen#infect()
 call pathogen#helptags()
 
@@ -15,6 +17,30 @@ let g:agprg = 'ag --nogroup --nocolor --column'
 
 let mapleader = ','
 map <leader>e :e %%
+
+" Run tests
+map <leader>t :w<CR>:call RunCurrentTest()<CR>
+map <leader>l :w<CR>:call RunCurrentLineInTest()<CR>
+
+" More convinient window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+" Search options
+set hlsearch
+set incsearch
+set ignorecase smartcase
+
+" Flexible windows
+set winwidth=84
+set winheight=8
+set winminheight=8
+set winheight=999
+
+" Git status line
+set statusline=%<%f%m\ %r\ %=%l,%c\ %p%%\ %y\ %{fugitive#statusline()}
 
 " vim-ruby-debugger options
 let g:ruby_debugger_progname = 'mvim'
@@ -77,3 +103,50 @@ function! NumberToggle()
 endfunc
 
 nnoremap <C-n> :call NumberToggle()<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Test-running stuff
+" stolen from Ben Orenstein's vimrc
+" (https://github.com/r00k/dotfiles/blob/master/vimrc)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! RunCurrentTest()
+  let in_test_file = match(expand("%"), '\(.feature\|_spec.rb\|_test.rb\)$') != -1
+  if in_test_file
+    call SetTestFile()
+
+    if match(expand('%'), '\.feature$') != -1
+      call SetTestRunner("!bundle exec cucumber")
+      exec g:bjo_test_runner g:bjo_test_file
+    elseif match(expand('%'), '_spec\.rb$') != -1
+      call SetTestRunner("!bundle exec rspec -f d")
+      exec g:bjo_test_runner g:bjo_test_file
+    else
+      call SetTestRunner("!ruby -Itest")
+      exec g:bjo_test_runner g:bjo_test_file
+    endif
+  else
+    exec g:bjo_test_runner g:bjo_test_file
+  endif
+endfunction
+
+function! SetTestRunner(runner)
+  let g:bjo_test_runner=a:runner
+endfunction
+
+function! RunCurrentLineInTest()
+  let in_test_file = match(expand("%"), '\(.feature\|_spec.rb\|_test.rb\)$') != -1
+  if in_test_file
+    call SetTestFileWithLine()
+  end
+
+  exec "!bundle exec rspec -f d" g:bjo_test_file . ":" . g:bjo_test_file_line
+endfunction
+
+function! SetTestFile()
+  let g:bjo_test_file=@%
+endfunction
+
+function! SetTestFileWithLine()
+  let g:bjo_test_file=@%
+  let g:bjo_test_file_line=line(".")
+endfunction
