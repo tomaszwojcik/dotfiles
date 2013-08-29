@@ -35,6 +35,10 @@ vmap <leader>{ :Tab /{<CR>
 nmap <leader>: :Tab /:\zs<CR>
 vmap <leader>: :Tab /:\zs<CR>
 
+" Higlight unwanted spaces
+set listchars=tab:▸\ ,trail:.
+set list
+
 " More convinient window navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -52,6 +56,9 @@ set winheight=8
 set winminheight=8
 set winheight=999
 
+set wildmode=list:longest
+set backspace=2
+set laststatus=2
 " Git status line
 set statusline=%<%f%m\ %r\ %=%l,%c\ %p%%\ %y\ %{fugitive#statusline()}
 
@@ -92,14 +99,14 @@ set directory=~/.vim_tmp
 " autocmd BufEnter * silent! lcd %:p:h
 
 " Intendation
-set expandtab
-set shiftwidth=2
+set autoindent
+set tabstop=2
 set softtabstop=2
+set shiftwidth=2
+set expandtab
 
-" Intendation
-if has("autocmd")
-  filetype on
-  autocmd FileType ruby,eruby setlocal ts=2 sts=2 sw=2 noexpandtab
+if h2as("autocmd")
+  " TODO add file types
 end
 
 " Enable line numbers and toggling between absolute and relative numbering
