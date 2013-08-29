@@ -22,6 +22,19 @@ map <leader>e :e %%
 map <leader>t :w<CR>:call RunCurrentSpecFile()<CR>
 map <leader>l :w<CR>:call RunNearestSpec()<CR>
 
+" Tabular
+nmap <leader>= :Tab /=<CR>
+vmap <leader>= :Tab /=<CR>
+nmap <leader>{ :Tab /{<CR>
+vmap <leader>{ :Tab /{<CR>
+nmap <leader>: :Tab /:\zs<CR>
+vmap <leader>: :Tab /:\zs<CR><leader>= :Tab /=<CR>
+vmap <leader>= :Tab /=<CR>
+nmap <leader>{ :Tab /{<CR>
+vmap <leader>{ :Tab /{<CR>
+nmap <leader>: :Tab /:\zs<CR>
+vmap <leader>: :Tab /:\zs<CR>
+
 " More convinient window navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
