@@ -105,21 +105,22 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
-if h2as("autocmd")
+if has("autocmd")
   " TODO add file types
+  filetype plugin indent on
 end
 
 " Enable line numbers and toggling between absolute and relative numbering
 " (C-n)
 set number
 function! NumberToggle()
-	if(&relativenumber == 1)
-		let &number = 1
-                let &relativenumber = 0
-	else
-		let &number = 0
-                let &relativenumber = 1
-        endif
+  if(&relativenumber == 1)
+    let &number = 1
+    let &relativenumber = 0
+  else
+    let &number = 0
+    let &relativenumber = 1
+  endif
 endfunc
 
 nnoremap <C-n> :call NumberToggle()<cr>
