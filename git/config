@@ -1,0 +1,39 @@
+[user]
+  name  = Tomasz Wojcik
+  email = wojcik.tomek@gmail.com
+
+[github]
+  user = tomaszwojcik
+
+[core]
+  excludesfile   = ~/work/dotfiles/git/gitignore
+  editor = vim
+
+[color]
+  ui = auto
+
+[color "diff"]
+  meta       = yellow
+  frag       = magenta
+  old        = red
+  new        = green
+  whitespace = red reverse
+
+[color "status"]
+  added     = green
+  changed   = yellow
+  untracked = red
+
+[alias]
+  st   = status -sb
+  ci   = commit
+  br   = branch
+  co   = checkout
+  df   = diff
+  dc   = diff --cached
+  lgp  = log -p
+  l    = log --graph --decorate --oneline
+  lola = log --graph --decorate --pretty  = oneline --abbrev-commit --all
+  ls   = ls-files
+  undo = reset --soft HEAD^
+  a    = add -A

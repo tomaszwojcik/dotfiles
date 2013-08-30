@@ -12,6 +12,14 @@ alias rv='rvm current'
 alias vim='mvim -v'
 alias v='mvim -v .'
 
+# Git
+alias ga='git add'
+alias gst='git st'
+alias gci='git commit'
+alias gco='git checkout'
+alias gpush='git push'
+alias gpull='git pull'
+
 alias ag='nocorrect ag'
 alias mc='nocorrect mc'
 alias irssi='nocorrect irssi'
