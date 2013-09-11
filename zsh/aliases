@@ -20,6 +20,10 @@ alias gco='git checkout'
 alias gpush='git push'
 alias gpull='git pull'
 
+# Tmux
+alias tmuxshare='tmux -S /var/tmux/pair new-session -s pair'
+
+# Fix autocorrection
 alias ag='nocorrect ag'
 alias mc='nocorrect mc'
 alias irssi='nocorrect irssi'
