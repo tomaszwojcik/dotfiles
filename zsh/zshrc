@@ -48,7 +48,12 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/Users/twojcik/.rvm/gems/ruby-2.0.0-p247/bin:/Users/twojcik/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/twojcik/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/twojcik/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+#
+export RVM_DEFAULT=/Users/twojcik/.rvm/gems/ruby-1.9.3-p448/bin
+export RVM_BIN=/Users/twojcik/.rvm/bin
+export LOCAL_BIN=/usr/local/bin # Needed for Exuberant CTAGS
+export PATH=$RVM_DEFAULT:$RVM_BIN:$LOCAL_BIN:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH
+
 
 # Includes
 DOTFILES_ZSH=$HOME/work/dotfiles/zsh

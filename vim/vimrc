@@ -88,6 +88,7 @@ function! EditAtCurrentPath(filename)
     execute 'edit' l:path
 endfunction
 
+set tags=./tags,tags
 " Don't pollute dirs with swap and temporary files
 set backupdir=~/.vim_bck
 set directory=~/.vim_tmp
@@ -108,6 +109,7 @@ set expandtab
 if has("autocmd")
   " TODO add file types
   filetype plugin indent on
+  autocmd BufWritePost * call system("ctags -R")
 end
 
 " Enable line numbers and toggling between absolute and relative numbering
