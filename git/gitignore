@@ -19,9 +19,10 @@ target/
 *.iws
 *.class
 
-# Rails
+# Rails, Ruby
 *.sqlite3
 config/database.yml
+.rspec
 
 # Logs, temps and misc
 log/
