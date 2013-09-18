@@ -1,3 +1,9 @@
+set t_Co=256
+
+set background=dark
+let g:solarized_termtrans=1
+colorscheme solarized
+
 set nocompatible
 
 call pathogen#infect()
@@ -5,7 +11,6 @@ call pathogen#helptags()
 
 syntax on
 filetype plugin indent on
-colorscheme jellybeans
 
 set cursorline
 
