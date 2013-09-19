@@ -12,6 +12,9 @@ Setup `.vim` dir and `.vimrc` files in the home dir:<br>
 ##### vim-rspec
 If using zsh on OS X it may be necessary to run move `/etc/zshenv` to `/etc/zshrc`.
 
+##### Color theme: zavaster-dark
+It is basing on Railscasts theme, to get it working properly you need iTerm2 with base16-railscasts.dark.256 theme.
+
 ##### CTAGS
 If `ctags -R` finishes with error (`invalid option -R` or something like that) you probably have use wrong version of CTAGS installed.
 Get newest one from the website and add `/usr/local/bin` to path before `/usr/bin`.
