@@ -10,7 +10,7 @@ let g:color_name="Zavaster Dark"
 " VIM
 hi Normal ctermfg=7, ctermbg=234
 hi Visual ctermbg=235
-hi CursorLine ctermbg=235, cterm=none
+hi CursorLine ctermbg=236, cterm=none
 hi CursorLineNr ctermfg=15, ctermbg=235
 hi LineNr ctermfg=8, ctermbg=235
 " Autocompletion menu
@@ -18,9 +18,9 @@ hi Pmenu ctermfg=3, ctermbg=235
 hi PmenuSel ctermfg=15, ctermbg=237
 hi SignColumn ctermbg=235
 " Splits
-hi StatusLine ctermbg=235, ctermfg=15, cterm=none
-hi StatusLineNC ctermbg=235, ctermfg=239, cterm=none
-hi VertSplit ctermbg=15, ctermfg=235
+hi StatusLine ctermbg=239, ctermfg=15, cterm=none
+hi StatusLineNC ctermbg=237, ctermfg=232, cterm=none
+hi VertSplit ctermbg=15, ctermfg=237
 
 " Ruby
 hi rubyInclude ctermfg=5
