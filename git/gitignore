@@ -24,6 +24,10 @@ target/
 config/database.yml
 .rspec
 
+# Zeus
+custom_plan.rb
+zeus.json
+
 # Logs, temps and misc
 log/
 tmp/
@@ -33,4 +37,5 @@ tmp/
 
 # Mac
 .DS_STORE
+.DS_Store
 

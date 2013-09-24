@@ -5,6 +5,12 @@ colorscheme zavaster-dark
 
 set nocompatible
 
+" Speedup tweaks
+set synmaxcol=200
+set ttyfast
+set ttyscroll=3
+set lazyredraw
+
 call pathogen#infect()
 call pathogen#helptags()
 
