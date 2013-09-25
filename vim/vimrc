@@ -6,7 +6,7 @@ colorscheme zavaster-dark
 set nocompatible
 
 " Speedup tweaks
-set synmaxcol=200
+set synmaxcol=80
 set ttyfast
 set ttyscroll=3
 set lazyredraw
@@ -18,6 +18,7 @@ syntax on
 filetype plugin indent on
 
 set cursorline
+set colorcolumn=80
 
 " MacVim specific options
 set clipboard=unnamed
@@ -115,7 +116,6 @@ set shiftwidth=2
 set expandtab
 
 if has("autocmd")
-  " TODO add file types
   filetype plugin indent on
   autocmd BufWritePost * call system("ctags -R")
 end

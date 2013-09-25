@@ -10,6 +10,7 @@ let g:color_name="Zavaster Dark"
 " VIM
 hi Normal ctermfg=7, ctermbg=234
 hi Visual ctermbg=235
+hi ColorColumn ctermbg=236
 hi CursorLine ctermbg=236, cterm=none
 hi CursorLineNr ctermfg=15, ctermbg=235
 hi LineNr ctermfg=8, ctermbg=235

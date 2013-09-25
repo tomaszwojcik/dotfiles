@@ -16,5 +16,5 @@ If using zsh on OS X it may be necessary to run move `/etc/zshenv` to `/etc/zshr
 It is basing on Railscasts theme, to get it working properly you need iTerm2 with base16-railscasts.dark.256 theme.
 
 ##### CTAGS
-If `ctags -R` finishes with error (`invalid option -R` or something like that) you probably have wrong version of CTAGS installed.
+If `ctags -R` finishes with error (`invalid option -R` or something like that) then you have the wrong version of CTAGS installed.
 Get the newest one from the website and add `/usr/local/bin` to path before `/usr/bin`.
