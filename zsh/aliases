@@ -11,6 +11,7 @@ alias rv='rvm current'
 # Vim aliases
 alias vim='mvim -v'
 alias v='mvim -v .'
+alias gv='mvim .'
 
 # Git
 alias ga='git add'

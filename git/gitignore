@@ -35,6 +35,11 @@ tmp/
 *.tmp
 *.out
 
+# RVM
+.rvmrc
+.ruby-version
+.ruby-gemset
+
 # Mac
 .DS_STORE
 .DS_Store

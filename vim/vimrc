@@ -1,15 +1,23 @@
 set t_Co=256
 
 set background=dark
-colorscheme zavaster-dark
+if has("gui_running")
+  " Some stuff here is MacVim specific
+  set guifont=Monaco:h14
+  set guioptions-=r
+  colorscheme railscasts
+  set fullscreen
+else
+  colorscheme zavaster-dark
+endif
 
 set nocompatible
 
 " Speedup tweaks
-set synmaxcol=80
+set synmaxcol=160
 set ttyfast
 set ttyscroll=3
-set lazyredraw
+set nolazyredraw
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -121,7 +129,6 @@ if has("autocmd")
 end
 
 " Enable line numbers and toggling between absolute and relative numbering
-" (C-n)
 set number
 function! NumberToggle()
   if(&relativenumber == 1)
