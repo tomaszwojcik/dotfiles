@@ -4,7 +4,10 @@ set background=dark
 if has("gui_running")
   " Some stuff here is MacVim specific
   set guifont=Monaco:h14
+  " Weird thing that turning off right scroll bar is 'r' and turning off left
+  " is capital 'L'
   set guioptions-=r
+  set guioptions-=L
   colorscheme railscasts
   set fullscreen
 else
@@ -125,7 +128,7 @@ set expandtab
 
 if has("autocmd")
   filetype plugin indent on
-  autocmd BufWritePost * call system("ctags -R")
+  " autocmd BufWritePost * call system("ctags -R")
 end
 
 " Enable line numbers and toggling between absolute and relative numbering

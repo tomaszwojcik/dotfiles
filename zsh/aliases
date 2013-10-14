@@ -12,6 +12,7 @@ alias rv='rvm current'
 alias vim='mvim -v'
 alias v='mvim -v .'
 alias gv='mvim .'
+alias retag='ctags -R'
 
 # Git
 alias ga='git add'
