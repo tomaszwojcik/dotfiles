@@ -15,12 +15,9 @@ alias gv='mvim .'
 alias retag='ctags -R'
 
 # Git
-alias ga='git add'
+alias glog='glo --graph'
 alias gst='git st'
 alias gci='git commit'
-alias gco='git checkout'
-alias gpush='git push'
-alias gpull='git pull'
 
 # Tmux
 alias tmuxshare='tmux -S /var/tmux/pair new-session -s pair'
