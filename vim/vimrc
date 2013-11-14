@@ -38,7 +38,11 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 let g:agprg = 'ag --nogroup --nocolor --column'
 
 let mapleader = ','
+map <leader>r :so ~/.vimrc<cr>
 map <leader>e :e %%
+
+" Movement stuff
+onoremap in :<c-u>normal! f(vi(<cr>
 
 " Run tests
 map <leader>t :w<CR>:call RunCurrentSpecFile()<CR>
@@ -97,20 +101,9 @@ let g:gitgutter_sign_removed = '-'
 let g:gitgutter_sign_modified = '*'
 let g:gitgutter_sign_modified_removed = '!'
 
-" :E invokes :e[dit] with prefixed path
-" Assume that we have started vim in the work/ dir and then we have navigated to 
-" the test/ subdir. :e <name> will invoke edit for work/<name>, however :E will invoke
-" edit for work/test/<name>
-command! -nargs=1 E call EditAtCurrentPath(<f-args>)
-
-function! EditAtCurrentPath(filename)
-    let l:path=expand('%:p:h').'/'.a:filename
-    execute 'edit' l:path
-endfunction
-
 set tags=./tags,tags
 " Don't pollute dirs with swap and temporary files
-set backupdir=~/.vim_bck
+set backupdir=~/.vim_tmp
 set directory=~/.vim_tmp
 
 " Set pwd to the current dir
