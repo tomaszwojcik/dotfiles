@@ -6,7 +6,6 @@ alias brs='bundle exec rails s'
 alias brc='bundle exec rails c'
 alias rs='rails s'
 alias rc='rails c'
-alias rv='rvm current'
 
 # Vim aliases
 alias vim='mvim -v'

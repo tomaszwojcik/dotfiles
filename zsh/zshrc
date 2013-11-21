@@ -51,13 +51,12 @@ source $ZSH/oh-my-zsh.sh
 #
 export RUBY_GC_MALLOC_LIMIT=90000000
 export RUBY_FREE_MIN=200000
-export RVM_DEFAULT=/Users/twojcik/.rvm/gems/ruby-1.9.3-p448/bin
-export RVM_BIN=/Users/twojcik/.rvm/bin
 export LOCAL_BIN=/usr/local/bin # Needed for Exuberant CTAGS
-export PATH=$RVM_DEFAULT:$RVM_BIN:$LOCAL_BIN:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH
-
+export PATH=$LOCAL_BIN:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH
 
 # Includes
 DOTFILES_ZSH=$HOME/work/dotfiles/zsh
 source $DOTFILES_ZSH/aliases
 source $DOTFILES_ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
