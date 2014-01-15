@@ -92,6 +92,10 @@ set statusline=%<%f%m\ %r\ %=%l,%c\ %p%%\ %y\ %{fugitive#statusline()}
 let g:ruby_debugger_progname = 'mvim'
 let g:ruby_debugger_debug_mode = 1
 
+" vim-rubocop
+let g:vimrubocop_keymap = 0
+nmap <leader>r :RuboCop<CR>
+
 " Remove annoying warning when trying to move to the next/previous buffer and
 " there are changes in the current buffer
 set hidden

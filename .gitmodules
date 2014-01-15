@@ -55,3 +55,6 @@
 [submodule "zsh/zsh-syntax-highlighting"]
 	path = zsh/zsh-syntax-highlighting
 	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "vim/bundle/vim-rubocop"]
+	path = vim/bundle/vim-rubocop
+	url = https://github.com/ngmy/vim-rubocop.git
