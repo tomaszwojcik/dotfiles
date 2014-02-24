@@ -22,6 +22,7 @@ target/
 # Rails, Ruby
 *.sqlite3
 config/database.yml
+config/ldap.yml
 .rspec
 
 # Zeus

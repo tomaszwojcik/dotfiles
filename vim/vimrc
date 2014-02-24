@@ -123,10 +123,14 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
-if has("autocmd")
-  filetype plugin indent on
-  " autocmd BufWritePost * call system("ctags -R")
-end
+filetype plugin indent on
+
+augroup dev_files
+  autocmd!
+
+  autocmd FileType java,python,cs set sw=4 sts=4 et
+augroup END
+
 
 " Enable line numbers and toggling between absolute and relative numbering
 set number
