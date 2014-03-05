@@ -9,7 +9,7 @@ if has("gui_running")
   set guioptions-=r
   set guioptions-=L
   colorscheme railscasts
-  set fullscreen
+  " set fullscreen
 else
   colorscheme zavaster-dark
 endif
@@ -17,7 +17,7 @@ endif
 set nocompatible
 
 " Speedup tweaks
-set synmaxcol=160
+set synmaxcol=100
 set ttyfast
 set ttyscroll=3
 set nolazyredraw
