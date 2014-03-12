@@ -48,6 +48,8 @@ onoremap in :<c-u>normal! f(vi(<cr>
 map <leader>t :w<CR>:call RunCurrentSpecFile()<CR>
 map <leader>l :w<CR>:call RunNearestSpec()<CR>
 
+let g:rspec_runner = "os_x_iterm"
+
 " Tabular
 nmap <leader>= :Tab /=<CR>
 vmap <leader>= :Tab /=<CR>
