@@ -10,6 +10,7 @@ if has("gui_running")
   set guioptions-=L
   colorscheme railscasts
   " set fullscreen
+  let g:rspec_runner = "os_x_iterm"
 else
   colorscheme zavaster-dark
 endif
@@ -38,7 +39,7 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 let g:agprg = 'ag --nogroup --nocolor --column'
 
 let mapleader = ','
-map <leader>r :so ~/.vimrc<cr>
+map <leader>. :so ~/.vimrc<cr>
 map <leader>e :e %%
 
 " Movement stuff
@@ -47,8 +48,6 @@ onoremap in :<c-u>normal! f(vi(<cr>
 " Run tests
 map <leader>t :w<CR>:call RunCurrentSpecFile()<CR>
 map <leader>l :w<CR>:call RunNearestSpec()<CR>
-
-let g:rspec_runner = "os_x_iterm"
 
 " Tabular
 nmap <leader>= :Tab /=<CR>
