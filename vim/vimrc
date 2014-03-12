@@ -106,7 +106,7 @@ let g:gitgutter_sign_removed = '-'
 let g:gitgutter_sign_modified = '*'
 let g:gitgutter_sign_modified_removed = '!'
 
-set tags=./tags,tags
+set tags=tags;/
 " Don't pollute dirs with swap and temporary files
 set backupdir=~/.vim_tmp
 set directory=~/.vim_tmp
