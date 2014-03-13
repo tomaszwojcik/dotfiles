@@ -54,6 +54,9 @@ export RUBY_FREE_MIN=200000
 export LOCAL_BIN=/usr/local/bin # Needed for Exuberant CTAGS
 export PATH=$LOCAL_BIN:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
 
+# http://bruteforce.gr/installing-mitmproxy-os-x-maverics-bypassing-clang-error-unknown-argument.html
+export ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future pip 
+
 # Includes
 DOTFILES_ZSH=$HOME/work/dotfiles/zsh
 source $DOTFILES_ZSH/aliases
