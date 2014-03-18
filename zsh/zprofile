@@ -1,2 +1,2 @@
 source ~/.zshrc
-chruby 2.0.0-p247
+chruby ruby-2.1.1
