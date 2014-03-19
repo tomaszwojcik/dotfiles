@@ -67,3 +67,12 @@
 [submodule "vim/bundle/vim/bundle/simple_bookmarks.vim"]
 	path = vim/bundle/vim/bundle/simple_bookmarks.vim
 	url = https://github.com/AndrewRadev/simple_bookmarks.vim.git
+[submodule "vim/bundle/vim-slim"]
+	path = vim/bundle/vim-slim
+	url = https://github.com/slim-template/vim-slim.git
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/bundle/simple_bookmarks.vim"]
+	path = vim/bundle/simple_bookmarks.vim
+	url = https://github.com/AndrewRadev/simple_bookmarks.vim.git
