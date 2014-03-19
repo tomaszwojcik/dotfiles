@@ -43,7 +43,7 @@ map <leader>. :so ~/.vimrc<cr>
 map <leader>e :e %%
 
 " Movement stuff
-onoremap in :<c-u>normal! f(vi(<cr>
+"onoremap in :<c-u>normal! f(vi(<cr>
 
 " Run tests
 map <leader>t :w<CR>:call RunCurrentSpecFile()<CR>
@@ -61,6 +61,11 @@ nmap <leader>{ :Tab /{<CR>
 vmap <leader>{ :Tab /{<CR>
 nmap <leader>: :Tab /:\zs<CR>
 vmap <leader>: :Tab /:\zs<CR>
+
+" Bookmarks
+nmap <leader>bl :CopenBookmarks<CR>
+nmap <leader>ba :Bookmark 
+nmap <leader>bd :DelBookmark 
 
 " Higlight unwanted spaces
 set listchars=tab:▸\ ,trail:.
