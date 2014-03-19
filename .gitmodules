@@ -76,3 +76,6 @@
 [submodule "vim/bundle/simple_bookmarks.vim"]
 	path = vim/bundle/simple_bookmarks.vim
 	url = https://github.com/AndrewRadev/simple_bookmarks.vim.git
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
