@@ -39,7 +39,7 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 let g:agprg = 'ag --nogroup --nocolor --column'
 
 let mapleader = ','
-map <leader>. :so ~/.vimrc<cr>
+map <leader>/ :so ~/.vimrc<cr>
 map <leader>e :e %%
 
 " Movement stuff
