@@ -3,12 +3,20 @@
 DOTFILES="$HOME/work/dotfiles"
 
 main() {
-  echo "Setting up dotfiles:"
+  if [[ $OSTYPE == *darwin* ]]; then
+    echo "Noticed that you are running Mac OS X."
+    mac_install_homebrew
+    mac_install_oh_my_zsh
+    mac_install_tmux
+    mac_install_git
+    mac_install_macvim
+    mac_install_ruby
+  fi
   setup_zsh
   setup_tmux
   setup_vim
   setup_git
-  setup_ruby
+  echo "Finished, enjoy!"
 }
 
 setup_zsh() {
@@ -17,9 +25,43 @@ setup_zsh() {
   slnk "$DOTFILES/zsh/zprofile" "$HOME/.zprofile"
   if [[ $OSTYPE == *darwin* ]]; then
     # This is required for the vim-rspec
-    echo "Mac OS X detected, moving /etc/zshenv to /etc/zshrc"
+    echo "Moving /etc/zshenv to /etc/zshrc (for vim-rspec)"
     sudo mv /etc/zshenv /etc/zshrc
   fi
+}
+
+mac_install_homebrew() {
+  echo "Installing Homebrew."
+  ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+}
+
+mac_install_oh_my_zsh() {
+  curl -L http://install.ohmyz.sh | sh
+}
+
+mac_install_tmux() {
+  brew install tmux
+}
+
+mac_install_git() {
+  brew install git
+}
+
+mac_install_macvim() {
+  brew install macvim
+}
+
+mac_install_ruby() {
+  echo "Installing chruby and ruby-install."
+  brew install chruby
+  brew install ruby-install
+
+  declare -a rubies=("1.9.3" "2.0" "2.1")
+  echo "Installing rubies."
+  for ruby in ${rubies[@]}
+  do
+    ruby-install ruby $ruby
+  done
 }
 
 setup_tmux() {
@@ -37,31 +79,6 @@ setup_git() {
   echo "Linking Git."
   slnk "$DOTFILES/git/gitignore" "$HOME/.gitignore"
   slnk "$DOTFILES/git/config" "$HOME/.gitconfig"
-}
-
-setup_ruby() {
-  if [[ $OSTYPE == *darwin* ]]; then
-    echo "Do you want to install chruby and ruby-install (requires Homebrew)? (y/N)"
-    read answer
-    if [[ ($answer == "y") || ($answer == "Y") ]]; then
-      echo "Installing chruby and ruby-install."
-      brew install chruby
-      brew install ruby-install
-
-
-      echo "Do you want to install rubies: 1.9.3, 2.0, 2.1? (y/N)"
-      read answer
-      if [[ ($answer == "y") || ($answer == "Y") ]]; then
-        ruby-install ruby 1.9.3
-        ruby-install ruby 2.0
-        ruby-install ruby 2.1
-      else
-        echo "Rubies not installed."
-      fi
-    else
-      echo "chruby and ruby-install not installed."
-    fi
-  fi
 }
 
 slnk() {
