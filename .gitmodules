@@ -82,3 +82,12 @@
 [submodule "vim/bundle/vmark.vim--Visual-Bookmarking"]
 	path = vim/bundle/vmark.vim--Visual-Bookmarking
 	url = https://github.com/vim-scripts/vmark.vim--Visual-Bookmarking.git
+[submodule "vim/bundle/vim-dispatch"]
+	path = vim/bundle/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch.git
+[submodule "vim/bundle/vim-rails"]
+	path = vim/bundle/vim-rails
+	url = https://github.com/tpope/vim-rails.git
+[submodule "vim/bundle/vim-haml"]
+	path = vim/bundle/vim-haml
+	url = https://github.com/tpope/vim-haml.git

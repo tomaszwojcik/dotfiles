@@ -1,5 +1,3 @@
-set t_Co=256
-
 set background=dark
 if has("gui_running")
   " Some stuff here is MacVim specific
@@ -12,6 +10,7 @@ if has("gui_running")
   " set fullscreen
   let g:rspec_runner = "os_x_iterm"
 else
+  set t_Co=256
   colorscheme zavaster-dark
 endif
 
@@ -46,6 +45,8 @@ map <leader>e :e %%
 "onoremap in :<c-u>normal! f(vi(<cr>
 
 " Run tests
+let g:rspec_command = 'Dispatch bundle exec rspec {spec}'
+
 map <leader>t :w<CR>:call RunCurrentSpecFile()<CR>
 map <leader>l :w<CR>:call RunNearestSpec()<CR>
 
@@ -133,8 +134,13 @@ filetype plugin indent on
 
 augroup dev_files
   autocmd!
-
   autocmd FileType java,python,cs set sw=4 sts=4 et
+  autocmd FileType ruby
+        \ if expand("%") =~# '_spec\.rb$' |
+        \   compiler rspec | setl makeprg=rspec\ $*|
+        \ else |
+        \   compiler ruby | setl makeprg=ruby\ -wc\ \"%:p\" |
+        \ endif
 augroup END
 
 

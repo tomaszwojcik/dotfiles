@@ -6,6 +6,7 @@
 *.swo
 .netrwhist
 tags
+!tags/
 
 # C-like
 *.obj
