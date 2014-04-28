@@ -8,7 +8,7 @@ main() {
     mac_install_homebrew
     mac_install_oh_my_zsh
     mac_install_tmux
-    mac_install_git
+    mac_install_ag
     mac_install_macvim
     mac_install_ruby
   fi
@@ -43,12 +43,12 @@ mac_install_tmux() {
   brew install tmux
 }
 
-mac_install_git() {
-  brew install git
-}
-
 mac_install_macvim() {
   brew install macvim
+}
+
+mac_install_ag() {
+  brew install ag
 }
 
 mac_install_ruby() {
