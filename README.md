@@ -1,20 +1,20 @@
 dotfiles
 ========
 
-#### Git setup
-Set global gitignore file: `git config --global core.excludesfile '<path_to_dotfiles>/git/gitignore'`
+## Setup script
+Set the `DOTFILES` (default: `~/work/dotfiles`) variable in the `setup.sh` script and simply run the script on your fresh OS installation.
 
-#### Vim setup
-Setup `.vim` dir and `.vimrc` files in the home dir:<br>
-`ln -s <path_to_dotfiles>/vim/vim .vim`<br>
-`ln -s <path_to_dotfiles>/vim/vimrc .vimrc`<br>
+On Mac OS X the script will automatically install:
 
-##### vim-rspec
-If using zsh on OS X it may be necessary to run move `/etc/zshenv` to `/etc/zshrc`.
+* [Homebrew](http://brew.sh/)
+* [tmux](http://tmux.sourceforge.net/)
+* [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh)
+* [Git](http://git-scm.com/)
+* [Mac Vim](https://code.google.com/p/macvim/)
+* [Ruby: 1.9.3, 2.0, 2.1](https://www.ruby-lang.org)
 
-##### Color theme: zavaster-dark
-It is basing on Railscasts theme, to get it working properly you need iTerm2 with base16-railscasts.dark.256 theme.
+Configuration files will be linked for any Linux/UNIX OS.
 
-##### CTAGS
+## CTAGS
 If `ctags -R` finishes with error (`invalid option -R` or something like that) then you have the wrong version of CTAGS installed.
 Get the newest one from the website and add `/usr/local/bin` to path before `/usr/bin`.
