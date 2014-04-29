@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 DOTFILES="$HOME/work/dotfiles"
+ANSWER_NO=0
+ANSWER_YES=1
 
 main() {
   if [[ $OSTYPE == *darwin* ]]; then
@@ -10,7 +12,9 @@ main() {
     mac_install_tmux
     mac_install_ag
     mac_install_macvim
-    mac_install_ruby
+    mac_install_ruby_install
+    mac_install_chruby
+    mac_install_rubies
   fi
   setup_zsh
   setup_tmux
@@ -51,17 +55,30 @@ mac_install_ag() {
   brew install ag
 }
 
-mac_install_ruby() {
-  echo "Installing chruby and ruby-install."
-  brew install chruby
+mac_install_ruby_install() {
+  echo "Installing ruby-install."
   brew install ruby-install
+}
 
+
+mac_install_chruby() {
+  echo "Installing chruby."
+  brew install chruby
+}
+
+mac_install_rubies() {
   declare -a rubies=("1.9.3" "2.0" "2.1")
-  echo "Installing rubies."
-  for ruby in ${rubies[@]}
-  do
-    ruby-install ruby $ruby
-  done
+  rubies_str=`IFS=,; echo "${rubies[*]}"`
+  ask_question "Do you want to install the following ruby versions: $rubies_str? (Y/n)" $ANSWER_YES
+  if [[ $? -eq $ANSWER_YES ]]; then
+    echo "Installing ruby."
+    for ruby in ${rubies[@]}
+    do
+      ruby-install ruby $ruby
+    done
+  else
+    echo "Ruby not installed - install manually: ruby-install ruby <version>."
+  fi
 }
 
 setup_tmux() {
@@ -79,6 +96,22 @@ setup_git() {
   echo "Linking Git."
   slnk "$DOTFILES/git/gitignore" "$HOME/.gitignore"
   slnk "$DOTFILES/git/config" "$HOME/.gitconfig"
+}
+
+ask_question() {
+  declare -a yes=('y' 'Y')
+  declare -a no=('n' 'N')
+  while : ; do
+    echo $1
+    read answer
+    if [[ ${yes[*]} =~ $answer ]]; then
+      return $ANSWER_YES
+    elif [[ ${no[*]} =~ $answer ]]; then
+      return $ANSWER_NO
+    elif [[ ! $answer && $2 ]]; then
+      return $2
+    fi
+  done
 }
 
 slnk() {
