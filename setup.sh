@@ -7,6 +7,7 @@ ANSWER_YES=1
 main() {
   if [[ $OSTYPE == *darwin* ]]; then
     echo "Noticed that you are running Mac OS X."
+    mac_install_commandline_tools
     mac_install_homebrew
     mac_install_oh_my_zsh
     mac_install_tmux
@@ -32,6 +33,13 @@ setup_zsh() {
     echo "Moving /etc/zshenv to /etc/zshrc (for vim-rspec)"
     sudo mv /etc/zshenv /etc/zshrc
   fi
+}
+
+mac_install_commandline_tools() {
+  echo "Installing command line tools."
+  `xcode-select --install`
+  echo "Please wait until installation finishes and type 'y'..."
+  ask_question "Command line tools installed? (y/n)"
 }
 
 mac_install_homebrew() {
