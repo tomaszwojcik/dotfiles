@@ -33,6 +33,14 @@ setup_zsh() {
     echo "Moving /etc/zshenv to /etc/zshrc (for vim-rspec)"
     sudo mv /etc/zshenv /etc/zshrc
   fi
+  echo "Updating /etc/shells."
+  echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
+
+  echo "Updating user's shell."
+  chsh -s /usr/local/bin/zsh
+
+  echo "!!! Check user's shell in the system preferences (/usr/local/bin/zsh) and press enter..."
+  read
 }
 
 mac_install_commandline_tools() {
@@ -83,6 +91,9 @@ mac_install_rubies() {
     for ruby in ${rubies[@]}
     do
       ruby-install ruby $ruby
+      chruby $ruby
+      gem install bundler
+      gem install rubocop
     done
   else
     echo "Ruby not installed - install manually: ruby-install ruby <version>."
