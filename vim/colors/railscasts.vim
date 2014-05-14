@@ -98,5 +98,5 @@ hi PMenuThumb guibg=#AAAAAA gui=NONE
 hi SignColumn guibg=#232323
 hi GitGutterAdd guifg=#A5C160 guibg=#232323
 hi GitGutterChange guifg=#FEFA55 guibg=#232323
-hi GitGutterDelete guifg=#DA4938 guibg=#232323
-hi GitGutterChangeDelete guifg=#DA4938 guibg=#232323
+hi GitGutterDelete guifg=#00FF00 guibg=#232323
+hi GitGutterChangeDelete guifg=#E85253 guibg=#232323
