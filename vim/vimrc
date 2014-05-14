@@ -100,9 +100,9 @@ let g:ruby_debugger_progname = 'mvim'
 let g:ruby_debugger_debug_mode = 1
 
 " vim-rubocop
-let g:vimrubocop_keymap = 0
-nmap <Leader>r :RuboCop<CR>
-" nnoremap <leader>r :!rubocop %<cr>
+" let g:vimrubocop_keymap = 0
+" nmap <Leader>r :RuboCop<CR>
+nnoremap <leader>r :!rubocop %<cr>
 
 " Remove annoying warning when trying to move to the next/previous buffer and
 " there are changes in the current buffer

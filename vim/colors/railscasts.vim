@@ -95,3 +95,8 @@ hi PMenuSbar guibg=#5A647E gui=NONE
 " thumb of the scrollbar in the popup
 hi PMenuThumb guibg=#AAAAAA gui=NONE
 
+hi SignColumn guibg=#232323
+hi GitGutterAdd guifg=#A5C160 guibg=#232323
+hi GitGutterChange guifg=#FEFA55 guibg=#232323
+hi GitGutterDelete guifg=#DA4938 guibg=#232323
+hi GitGutterChangeDelete guifg=#DA4938 guibg=#232323
