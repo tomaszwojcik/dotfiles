@@ -14,7 +14,7 @@ alias gv='mvim .'
 alias retag='ctags -R'
 
 # Git
-alias glo='git log --graph --oneline'
+alias glo='git lolp'
 alias gst='git st'
 alias gci='git commit'
 

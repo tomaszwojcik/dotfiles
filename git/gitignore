@@ -24,6 +24,8 @@ target/
 *.sqlite3
 config/database.yml
 config/ldap.yml
+config/newrelic.yml
+config/paypal.yml
 .rspec
 
 # Printbox / Ink Labs
