@@ -100,9 +100,9 @@ let g:ruby_debugger_progname = 'mvim'
 let g:ruby_debugger_debug_mode = 1
 
 " vim-rubocop
-" let g:vimrubocop_keymap = 0
-" nmap <Leader>r :RuboCop<CR>
-nnoremap <leader>r :!rubocop %<cr>
+let g:vimrubocop_keymap = 0
+nmap <Leader>r :RuboCop<CR>
+" nnoremap <leader>r :!rubocop %<cr>
 
 " Remove annoying warning when trying to move to the next/previous buffer and
 " there are changes in the current buffer
@@ -136,12 +136,12 @@ filetype plugin indent on
 augroup dev_files
   autocmd!
   autocmd FileType java,python,cs set sw=4 sts=4 et
-  autocmd FileType ruby
-        \ if expand("%") =~# '_spec\.rb$' |
-        \   compiler rspec | setl makeprg=rspec\ $*|
-        \ else |
-        \   compiler ruby | setl makeprg=ruby\ -wc\ \"%:p\" |
-        \ endif
+  "autocmd FileType ruby
+  "      \ if expand("%") =~# '_spec\.rb$' |
+  "      \   compiler rspec | setl makeprg=rspec\ $*|
+  "      \ else |
+  "      \   compiler ruby | setl makeprg=ruby\ -wc\ \"%:p\" |
+  "      \ endif
 augroup END
 
 
