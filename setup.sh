@@ -4,44 +4,22 @@ DOTFILES="$HOME/work/dotfiles"
 ANSWER_NO=0
 ANSWER_YES=1
 
+BREW_APPS="tmux ag macvim ruby-install chruby autojump git svn"
+
 main() {
   if [[ $OSTYPE == *darwin* ]]; then
     echo "Noticed that you are running Mac OS X."
     mac_install_commandline_tools
-    mac_install_homebrew
     mac_install_oh_my_zsh
-    mac_install_tmux
-    mac_install_ag
-    mac_install_macvim
-    mac_install_ruby_install
-    mac_install_chruby
+    mac_install_homebrew
+    mac_install_brew_apps
     mac_install_rubies
-    mac_install_autojump
   fi
   setup_zsh
   setup_tmux
   setup_vim
   setup_git
   echo "Finished, enjoy!"
-}
-
-setup_zsh() {
-  echo "Linking zsh."
-  slnk "$DOTFILES/zsh/zshrc" "$HOME/.zshrc"
-  slnk "$DOTFILES/zsh/zprofile" "$HOME/.zprofile"
-  if [[ $OSTYPE == *darwin* ]]; then
-    # This is required for the vim-rspec
-    echo "Moving /etc/zshenv to /etc/zshrc (for vim-rspec)"
-    sudo mv /etc/zshenv /etc/zshrc
-  fi
-  echo "Updating /etc/shells."
-  echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
-
-  echo "Updating user's shell."
-  chsh -s /usr/local/bin/zsh
-
-  echo "!!! Check user's shell in the system preferences (/usr/local/bin/zsh) and press enter..."
-  read
 }
 
 mac_install_commandline_tools() {
@@ -60,27 +38,9 @@ mac_install_oh_my_zsh() {
   curl -L http://install.ohmyz.sh | sh
 }
 
-mac_install_tmux() {
-  brew install tmux
-}
-
-mac_install_macvim() {
-  brew install macvim
-}
-
-mac_install_ag() {
-  brew install ag
-}
-
-mac_install_ruby_install() {
-  echo "Installing ruby-install."
-  brew install ruby-install
-}
-
-
-mac_install_chruby() {
-  echo "Installing chruby."
-  brew install chruby
+mac_install_brew_apps() {
+  echo "Installing following apps via Homebrew: $BREW_APPS"
+  brew install $BREW_APPS
 }
 
 mac_install_rubies() {
@@ -101,9 +61,23 @@ mac_install_rubies() {
   fi
 }
 
-mac_install_autojump() {
-  echo "Installing autojump."
-  brew install autojump
+setup_zsh() {
+  echo "Linking zsh."
+  slnk "$DOTFILES/zsh/zshrc" "$HOME/.zshrc"
+  slnk "$DOTFILES/zsh/zprofile" "$HOME/.zprofile"
+  if [[ $OSTYPE == *darwin* ]]; then
+    # This is required for the vim-rspec
+    echo "Moving /etc/zshenv to /etc/zshrc (for vim-rspec)"
+    sudo mv /etc/zshenv /etc/zshrc
+  fi
+  echo "Updating /etc/shells."
+  echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
+
+  echo "Updating user's shell."
+  chsh -s /usr/local/bin/zsh
+
+  echo "!!! Check user's shell in the system preferences (/usr/local/bin/zsh) and press enter..."
+  read
 }
 
 setup_tmux() {
