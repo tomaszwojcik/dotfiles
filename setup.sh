@@ -16,6 +16,7 @@ main() {
     mac_install_ruby_install
     mac_install_chruby
     mac_install_rubies
+    mac_install_autojump
   fi
   setup_zsh
   setup_tmux
@@ -98,6 +99,11 @@ mac_install_rubies() {
   else
     echo "Ruby not installed - install manually: ruby-install ruby <version>."
   fi
+}
+
+mac_install_autojump() {
+  echo "Installing autojump."
+  brew install autojump
 }
 
 setup_tmux() {

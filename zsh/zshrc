@@ -52,9 +52,11 @@ source $ZSH/oh-my-zsh.sh
 # http://bruteforce.gr/installing-mitmproxy-os-x-maverics-bypassing-clang-error-unknown-argument.html
 export ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future
 
+
 # Includes
 DOTFILES_ZSH=$HOME/work/dotfiles/zsh
 source $DOTFILES_ZSH/aliases
+source $DOTFILES_ZSH/autojump
 source $DOTFILES_ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
