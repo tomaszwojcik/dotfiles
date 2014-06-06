@@ -1,6 +1,7 @@
 alias ll='ls -l'
 
 # Ruby and RoR aliases
+alias be='bundle exec'
 alias brspec='bundle exec rspec'
 alias brs='bundle exec rails s'
 alias brc='bundle exec rails c'
