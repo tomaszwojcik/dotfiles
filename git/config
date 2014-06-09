@@ -37,7 +37,7 @@
   lgp  = log -p
   l    = log --graph --decorate --oneline
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-  lolp = log --graph --pretty=format:\"%C(yellow)%h %Cblue%ad %C(green)%cn%Cred%d %Creset%s\" --date=short
+  lolp = log --graph --pretty=format:\"%C(yellow)%h %Cblue%ad %C(green)%cn %Creset%s%Cred%d\" --date=short
 
   ls   = ls-files
   undo = reset --soft HEAD^
