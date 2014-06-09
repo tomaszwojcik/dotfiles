@@ -78,6 +78,9 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" Retag
+map <leader>R :!ctags -R<CR>
+
 " Search options
 set hlsearch
 set incsearch
