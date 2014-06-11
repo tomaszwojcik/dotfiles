@@ -1,17 +1,17 @@
-set background=dark
+set background=light
+colorscheme solarized
+
 if has("gui_running")
   " Some stuff here is MacVim specific
-  set guifont=Monaco:h14
+  set guifont=Monaco:h13
   " Weird thing that turning off right scroll bar is 'r' and turning off left
   " is capital 'L'
   set guioptions-=r
   set guioptions-=L
-  colorscheme railscasts
   " set fullscreen
   let g:rspec_runner = "os_x_iterm"
 else
   set t_Co=256
-  colorscheme zavaster-dark
 endif
 
 set nocompatible
@@ -80,6 +80,9 @@ map <C-l> <C-w>l
 
 " Retag
 map <leader>R :!ctags -R<CR>
+
+" Ctrl-P
+map <leader>p :ClearAllCtrlPCaches<CR>
 
 " Search options
 set hlsearch
