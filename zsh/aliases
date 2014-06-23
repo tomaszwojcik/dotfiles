@@ -18,6 +18,7 @@ alias retag='ctags -R'
 alias glo='git lolp'
 alias gst='git st'
 alias gci='git commit'
+alias glom='gl origin master'
 
 # Tmux
 alias tmuxshare='tmux -S /var/tmux/pair new-session -s pair'
