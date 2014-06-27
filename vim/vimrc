@@ -146,8 +146,8 @@ set expandtab
 filetype plugin indent on
 
 augroup dev_files
-  autocmd!
-  autocmd FileType java,python,cs set sw=4 sts=4 et
+  au FileType java,python,cs set sw=4 sts=4 et
+  au BufRead,BufNewFile *.rabl setf ruby
   "autocmd FileType ruby
   "      \ if expand("%") =~# '_spec\.rb$' |
   "      \   compiler rspec | setl makeprg=rspec\ $*|
