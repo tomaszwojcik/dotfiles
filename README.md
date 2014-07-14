@@ -22,3 +22,10 @@ Configuration files will be linked for any Linux/UNIX OS.
 ## CTAGS
 If `ctags -R` finishes with error (`invalid option -R` or something like that) then you have the wrong version of CTAGS installed.
 Get the newest one from the website and add `/usr/local/bin` to path before `/usr/bin`.
+
+## TODO
+
+* Databases setup (postgres, mysql)
+* Newest git
+
+Remove prompts, always install rubiesa nd stuff.
