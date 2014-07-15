@@ -1,6 +1,9 @@
 # Emacs
 \#*#
 
+# Adom
+*.bak
+
 # VIm
 *.swp
 *.swo

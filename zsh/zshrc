@@ -54,7 +54,8 @@ export ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future
 
 
 # Includes
-DOTFILES_ZSH=$HOME/work/dotfiles/zsh
+DOTFILES=$HOME/work/dotfiles
+DOTFILES_ZSH=$DOTFILES/zsh
 source $DOTFILES_ZSH/aliases
 source $DOTFILES_ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -63,3 +64,4 @@ source /usr/local/opt/chruby/share/chruby/auto.sh
 
 export PATH=/usr/local/bin:$PATH
 source $DOTFILES_ZSH/autojump
+export MC_SKIN=$DOTFILES/mc/mc/solarized.ini

@@ -1,32 +1,24 @@
 #!/usr/bin/env bash
 
 DOTFILES="$HOME/work/dotfiles"
-ANSWER_NO=0
-ANSWER_YES=1
 
-BREW_APPS="tmux ag macvim ruby-install chruby autojump git svn"
+declare -a RUBY_VERSIONS=("1.9.3" "2.0" "2.1")
+BREW_APPS="tmux tree ag macvim ruby-install chruby autojump git svn imagemagick"
 
 main() {
-  if [[ $OSTYPE == *darwin* ]]; then
-    echo "Noticed that you are running Mac OS X."
-    mac_install_commandline_tools
-    mac_install_oh_my_zsh
-    mac_install_homebrew
-    mac_install_brew_apps
-    mac_install_rubies
+  if [[ $OSTYPE != *darwin* ]]; then
+    echo "This script is for Mac OS X only."
+    exit
   fi
+  mac_install_oh_my_zsh
+  mac_install_homebrew
+  mac_install_brew_apps
+  mac_install_rubies
   setup_zsh
   setup_tmux
   setup_vim
   setup_git
   echo "Finished, enjoy!"
-}
-
-mac_install_commandline_tools() {
-  echo "Installing command line tools."
-  `xcode-select --install`
-  echo "Please wait until installation finishes and type 'y'..."
-  ask_question "Command line tools installed? (y/n)"
 }
 
 mac_install_homebrew() {
@@ -44,73 +36,49 @@ mac_install_brew_apps() {
 }
 
 mac_install_rubies() {
-  declare -a rubies=("1.9.3" "2.0" "2.1")
-  rubies_str=`IFS=,; echo "${rubies[*]}"`
-  ask_question "Do you want to install the following ruby versions: $rubies_str? (Y/n)" $ANSWER_YES
-  if [[ $? -eq $ANSWER_YES ]]; then
-    echo "Installing ruby."
-    for ruby in ${rubies[@]}
-    do
-      ruby-install ruby $ruby
-      chruby $ruby
-      gem install bundler
-      gem install rubocop
-    done
-  else
-    echo "Ruby not installed - install manually: ruby-install ruby <version>."
-  fi
+  rubies_str=`IFS=,; echo "${RUBY_VERSIONS[*]}"`
+  echo "Installing ruby versions: $rubies_str"
+  for ruby in ${RUBY_VERSIONS[@]}
+  do
+    ruby-install ruby $ruby
+    chruby $ruby
+    gem install bundler
+    gem install rubocop
+  done
 }
 
 setup_zsh() {
-  echo "Linking zsh."
+  echo "Linking zsh configuration."
   slnk "$DOTFILES/zsh/zshrc" "$HOME/.zshrc"
   slnk "$DOTFILES/zsh/zprofile" "$HOME/.zprofile"
-  if [[ $OSTYPE == *darwin* ]]; then
-    # This is required for the vim-rspec
-    echo "Moving /etc/zshenv to /etc/zshrc (for vim-rspec)"
-    sudo mv /etc/zshenv /etc/zshrc
-  fi
+  # This is required for the vim-rspec
+  echo "Moving /etc/zshenv to /etc/zshrc (for vim-rspec)"
+  sudo mv /etc/zshenv /etc/zshrc
   echo "Updating /etc/shells."
   echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
 
   echo "Updating user's shell."
   chsh -s /usr/local/bin/zsh
 
-  echo "!!! Check user's shell in the system preferences (/usr/local/bin/zsh) and press enter..."
+  echo "!!! Set user's shell in the system preferences (/usr/local/bin/zsh) and press enter..."
   read
 }
 
 setup_tmux() {
-  echo "Linking tmux."
+  echo "Linking tmux configuration."
   slnk "$DOTFILES/tmux/tmux.conf" "$HOME/.tmux.conf"
 }
 
 setup_vim() {
-  echo "Linking Vim."
+  echo "Linking Vim configuration."
   slnk "$DOTFILES/vim/vimrc" "$HOME/.vimrc"
   slnk "$DOTFILES/vim/vim" "$HOME/.vim"
 }
 
 setup_git() {
-  echo "Linking Git."
+  echo "Linking Git configuration."
   slnk "$DOTFILES/git/gitignore" "$HOME/.gitignore"
   slnk "$DOTFILES/git/config" "$HOME/.gitconfig"
-}
-
-ask_question() {
-  declare -a yes=('y' 'Y')
-  declare -a no=('n' 'N')
-  while : ; do
-    echo $1
-    read answer
-    if [[ ${yes[*]} =~ $answer ]]; then
-      return $ANSWER_YES
-    elif [[ ${no[*]} =~ $answer ]]; then
-      return $ANSWER_NO
-    elif [[ ! $answer && $2 ]]; then
-      return $2
-    fi
-  done
 }
 
 slnk() {

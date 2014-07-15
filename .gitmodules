@@ -103,3 +103,6 @@
 [submodule "vim/bundle/gruvbox"]
 	path = vim/bundle/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
+[submodule "mc/mc"]
+	path = mc/mc
+	url = https://github.com/peel/mc.git
