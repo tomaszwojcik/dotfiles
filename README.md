@@ -1,4 +1,4 @@
-Mac OS X ruby-dev setup script
+Mac OS X setup script (for ruby developers)
 ========
 
 ## Pre-installation requirements
