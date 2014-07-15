@@ -12,8 +12,9 @@ BREW_APPS="tmux tree ag macvim ruby-install chruby autojump git svn"
 * [tmux](http://tmux.sourceforge.net/)
 * [autojump](https://github.com/joelthelion/autojump)
 * [git](http://git-scm.com/)
-* [svn]
-* [tree]
+* svn
+* tree
+* [ImageMagick](http://www.imagemagick.org/)
 * [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)
 * [Mac Vim](https://code.google.com/p/macvim/)
 * [ruby-install](https://github.com/postmodern/ruby-install)
