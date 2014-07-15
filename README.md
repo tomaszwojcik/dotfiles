@@ -19,7 +19,7 @@ The script will automatically install:
 * [oh my zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [tmux](http://tmux.sourceforge.net/)
 * [autojump](https://github.com/joelthelion/autojump)
-* [git](http://git-scm.com/) (update Mac Os X version)
+* [git](http://git-scm.com/) (Mac's is outdated)
 * svn
 * tree
 * [ImageMagick](http://www.imagemagick.org/)
