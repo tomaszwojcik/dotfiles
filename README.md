@@ -1,5 +1,7 @@
-Mac OS X setup script (for ruby developers)
+Mac OS X setup script
 ========
+
+Configuration files and system setup script (mainly for ruby developers).
 
 ## Pre-installation requirements
 
@@ -8,6 +10,8 @@ Mac OS X command line tools:
 ```
 xcode-select --install
 ```
+
+Or simply install XCode and command line tools via XCode.
 
 ## Installation
 
