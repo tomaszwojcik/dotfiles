@@ -1,5 +1,7 @@
-Mac OS X setup script (for ruby developers)
+Mac OS X setup script
 ========
+
+Configuration files and system setup script (mainly for ruby developers).
 
 ## Pre-installation requirements
 
@@ -8,6 +10,8 @@ Mac OS X command line tools:
 ```
 xcode-select --install
 ```
+
+Or simply install XCode and command line tools via XCode.
 
 ## Installation
 
@@ -19,7 +23,7 @@ The script will automatically install:
 * [oh my zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [tmux](http://tmux.sourceforge.net/)
 * [autojump](https://github.com/joelthelion/autojump)
-* [git](http://git-scm.com/) (update Mac Os X version)
+* [git](http://git-scm.com/) (Mac's is outdated)
 * svn
 * tree
 * [ImageMagick](http://www.imagemagick.org/)
