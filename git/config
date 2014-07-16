@@ -6,6 +6,7 @@
   user = tomaszwojcik
 
 [core]
+  mergeoptions = --no-ff
   excludesfile = ~/.gitignore
   editor       = vim
 
