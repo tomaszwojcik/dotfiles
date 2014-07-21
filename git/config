@@ -6,9 +6,11 @@
   user = tomaszwojcik
 
 [core]
-  mergeoptions = --no-ff
   excludesfile = ~/.gitignore
   editor       = vim
+
+[merge]
+  ff = no
 
 [push]
   default = simple
