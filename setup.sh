@@ -3,16 +3,18 @@
 DOTFILES="$HOME/work/dotfiles"
 
 declare -a RUBY_VERSIONS=("1.9.3" "2.0" "2.1")
-BREW_APPS="tmux tree ag macvim ruby-install chruby autojump git svn imagemagick"
+BREW_APPS="tmux tree macvim ruby-install chruby autojump mercurial git svn"
 
 main() {
   if [[ $OSTYPE != *darwin* ]]; then
     echo "This script is for Mac OS X only."
     exit
   fi
-  mac_install_oh_my_zsh
   mac_install_homebrew
+  mac_install_zsh
+  mac_install_oh_my_zsh
   mac_install_brew_apps
+  mac_install_imagemagick
   mac_install_rubies
   setup_zsh
   setup_tmux
@@ -26,6 +28,10 @@ mac_install_homebrew() {
   ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 }
 
+mac_install_zsh() {
+  brew install zsh
+}
+
 mac_install_oh_my_zsh() {
   curl -L http://install.ohmyz.sh | sh
 }
@@ -33,6 +39,11 @@ mac_install_oh_my_zsh() {
 mac_install_brew_apps() {
   echo "Installing following apps via Homebrew: $BREW_APPS"
   brew install $BREW_APPS
+}
+
+mac_install_imagemagick() {
+  brew install libtiff
+  brew install imagemagick
 }
 
 mac_install_rubies() {
