@@ -10,7 +10,7 @@
   editor       = vim
 
 [merge]
-  ff = no
+  ff = yes
 
 [push]
   default = simple

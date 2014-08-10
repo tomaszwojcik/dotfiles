@@ -84,6 +84,10 @@ map <leader>R :!ctags -R<CR>
 " Ctrl-P
 map <leader>p :ClearAllCtrlPCaches<CR>
 
+" Fix syntax highlighting
+noremap <leader>` <Esc>:syntax sync fromstart<CR>
+inoremap <leader` <C-o>:syntax sync fromstart<CR>
+
 " Search options
 set hlsearch
 set incsearch
