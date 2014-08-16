@@ -33,9 +33,12 @@ The script will automatically install:
 * [chruby](https://github.com/postmodern/chruby)
 * [Ruby: 1.9.3, 2.0, 2.1](https://www.ruby-lang.org)
 
+Change `/etc/paths` so the `/usr/local/bin` will be at first place.
+
 ## TODO
 
-* Databases setup (postgres, mysql)
+* Databases setup (postgres, mysql, reds)
+* Split scripts: terminal/env/tools setup, ruby-setup
 
 ## Troubleshooting
 If `ctags -R` finishes with error (`invalid option -R` or something like that) then you have the wrong version of CTAGS installed.
