@@ -1,4 +1,5 @@
 alias ll='ls -l'
+alias htop='sudo htop'
 
 # Ruby and RoR aliases
 alias be='bundle exec'
