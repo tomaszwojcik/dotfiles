@@ -61,7 +61,7 @@ mac_install_rubies() {
 setup_zsh() {
   echo "Linking zsh configuration."
   slnk "$DOTFILES/zsh/zshrc" "$HOME/.zshrc"
-  slnk "$DOTFILES/zsh/zprofile" "$HOME/.zprofile"
+  # slnk "$DOTFILES/zsh/zprofile" "$HOME/.zprofile"
   # This is required for the vim-rspec
   echo "Moving /etc/zshenv to /etc/zshrc (for vim-rspec)"
   sudo mv /etc/zshenv /etc/zshrc
