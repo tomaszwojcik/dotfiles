@@ -31,7 +31,7 @@ Change `/etc/paths` so the `/usr/local/bin` will be at first place.
 
 ## Manual installation
 
-Here are tools that I manually install:
+Tools that I install manually (give them a try):
 
 * [1Password](https://agilebits.com/onepassword)
 * [RescueTime](https://www.rescuetime.com) - time management
