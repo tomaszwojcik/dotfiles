@@ -5,13 +5,7 @@ Configuration files and system setup script (mainly for ruby developers).
 
 ## Pre-installation requirements
 
-Mac OS X command line tools:
-
-```
-xcode-select --install
-```
-
-Or simply install XCode and command line tools via XCode.
+Download the XCode and install it's command line tools.
 
 ## Installation
 
@@ -39,7 +33,3 @@ Change `/etc/paths` so the `/usr/local/bin` will be at first place.
 
 * Databases setup (postgres, mysql, reds)
 * Split scripts: terminal/env/tools setup, ruby-setup
-
-## Troubleshooting
-If `ctags -R` finishes with error (`invalid option -R` or something like that) then you have the wrong version of CTAGS installed.
-Get the newest one from the website and add `/usr/local/bin` to path before `/usr/bin`.
