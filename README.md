@@ -36,7 +36,7 @@ Here are tools that I manually install:
 * [1Password](https://agilebits.com/onepassword)
 * [RescueTime](https://www.rescuetime.com) - time management
 * [Tunnelblick](https://code.google.com/p/tunnelblick/) - VPN
-* [Dash](http://kapeli.com/dash) - offline DOCS
+* [Dash](http://kapeli.com/dash) - offline documentation
 
 ## TODO
 
