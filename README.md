@@ -29,6 +29,15 @@ The script will automatically install:
 
 Change `/etc/paths` so the `/usr/local/bin` will be at first place.
 
+## Manual installation
+
+Here are tools that I manually install:
+
+* [1Password](https://agilebits.com/onepassword)
+* [RescueTime](https://www.rescuetime.com) - time management
+* [Tunnelblick](https://code.google.com/p/tunnelblick/) - VPN
+* [Dash](http://kapeli.com/dash) - offline DOCS
+
 ## TODO
 
 * Databases setup (postgres, mysql, reds)
