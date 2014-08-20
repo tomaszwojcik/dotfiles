@@ -38,6 +38,11 @@ Tools that I install manually (give them a try):
 * [Tunnelblick](https://code.google.com/p/tunnelblick/) - VPN
 * [Dash](http://kapeli.com/dash) - offline documentation
 
+Last things to do:
+
+* Enable Mac OS X File Vault
+* Enable Mac OS X firewall
+
 ## TODO
 
 * Databases setup (postgres, mysql, reds)
