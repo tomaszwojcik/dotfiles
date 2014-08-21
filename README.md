@@ -37,6 +37,7 @@ Tools that I install manually (give them a try):
 * [RescueTime](https://www.rescuetime.com) - time management
 * [Tunnelblick](https://code.google.com/p/tunnelblick/) - VPN
 * [Dash](http://kapeli.com/dash) - offline documentation
+* [Blotter](http://wireload.net/products/blotter/) - decent calendar
 
 Last things to do:
 
