@@ -38,6 +38,7 @@ Tools that I install manually (give them a try):
 * [Tunnelblick](https://code.google.com/p/tunnelblick/) - VPN
 * [Dash](http://kapeli.com/dash) - offline documentation
 * [Blotter](http://wireload.net/products/blotter/) - decent calendar
+* [P4Merge](http://www.perforce.com/product/components/perforce-visual-merge-and-diff-tools) - for merging conflicts
 
 Last things to do:
 
