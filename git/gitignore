@@ -4,6 +4,9 @@
 # Adom
 *.bak
 
+# P4merge
+# *.orig
+
 # VIm
 *.swp
 *.swo
@@ -29,7 +32,9 @@ config/database.yml
 config/ldap.yml
 config/newrelic.yml
 config/paypal.yml
+config/paypal-sdk.yml
 .rspec
+.env
 
 # Printbox / Ink Labs
 public/library

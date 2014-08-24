@@ -86,6 +86,9 @@ map <leader>R :!ctags -R<CR>
 " Ctrl-P
 map <leader>p :ClearAllCtrlPCaches<CR>
 
+" Emmet
+map <leader>o <C-y>,
+
 " Fix syntax highlighting
 noremap <leader>` <Esc>:syntax sync fromstart<CR>
 inoremap <leader` <C-o>:syntax sync fromstart<CR>
@@ -155,6 +158,8 @@ set expandtab
 filetype plugin indent on
 
 augroup dev_files
+  autocmd!
+
   au FileType java,python,cs set sw=4 sts=4 et
   au BufRead,BufNewFile *.rabl setf ruby
   "autocmd FileType ruby
