@@ -49,3 +49,4 @@ Last things to do:
 
 * Databases setup (postgres, mysql, reds)
 * Split scripts: terminal/env/tools setup, ruby-setup
+* wget
