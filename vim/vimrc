@@ -29,7 +29,7 @@ syntax on
 filetype plugin indent on
 
 set cursorline
-set colorcolumn=80
+set colorcolumn=160
 
 " MacVim specific options
 set clipboard=unnamed
