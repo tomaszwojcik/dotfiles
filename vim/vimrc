@@ -17,7 +17,7 @@ endif
 set nocompatible
 
 " Speedup tweaks
-set synmaxcol=100
+set synmaxcol=160
 set ttyfast
 set ttyscroll=3
 set nolazyredraw
@@ -29,7 +29,7 @@ syntax on
 filetype plugin indent on
 
 set cursorline
-set colorcolumn=160
+set colorcolumn=80
 
 " MacVim specific options
 set clipboard=unnamed
