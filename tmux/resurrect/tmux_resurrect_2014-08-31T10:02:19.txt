@@ -1,0 +1,353 @@
+pane	ink	1	:zsh	1	:*	0	:/Users/twojcik	1	zsh	:   0 ? (kernel_task)
+   1 ? (launchd)
+   2 ? (launchctl)
+  13 ? (UserEventAgent)
+  14 ? (kextd)
+  15 ? (taskgated)
+  16 ? (notifyd)
+  17 ? (securityd)
+  18 ? (diskarbitrationd)
+  19 ? (powerd)
+  20 ? (configd)
+  21 ? (syslogd)
+  23 ? (distnoted)
+  24 ? (opendirectoryd)
+  26 ? (cfprefsd)
+  27 ? (xpcd)
+  37 ? (authd)
+  38 ? (coreservicesd)
+  39 ? (backupd)
+  41 ? (fseventsd)
+  42 ? (usbd)
+  43 ? (mDNSResponder)
+  44 ? (networkd)
+  46 ? (sysmond)
+  48 ? (systemkeychain)
+  61 ? (networkd_privile)
+  64 ? (ntpd)
+  65 ? (cron)
+  66 ? (wdhelper)
+  67 ? (warmd)
+  68 ? (usbmuxd)
+  71 ? (stackshot)
+  74 ? (SleepServicesD)
+  76 ? (revisiond)
+  79 ? (pacemaker)
+  82 ? (mds)
+  85 /System/Library/CoreServices/loginwindow.app/Contents/MacOS/loginwindow console
+  86 ? (logind)
+  87 ? (locationd)
+  88 ? (KernelEventAgent)
+  90 ? (hidd)
+  92 ? (dynamic_pager)
+  94 ? (dpd)
+  96 ? (corestoraged)
+  97 ? (launchservicesd)
+  98 ? (appleeventsd)
+ 102 ? (autofsd)
+ 103 ? (apsd)
+ 104 ? (aosnotifyd)
+ 105 ? (socketfilterfw)
+ 106 ? (airportd)
+ 107 ? (digest-service)
+ 112 ? (WindowServer)
+ 113 ? (rpcsvchost)
+ 117 ? (ocspd)
+ 118 ? (mds_stores)
+ 119 ? (CVMServer)
+ 120 ? (launchd)
+ 124 ? (sandboxd)
+ 133 ? (com.apple.CodeSi)
+ 134 ? (gkbisd)
+ 138 ? (coresymbolicatio)
+ 141 ? (CVMCompiler)
+ 143 ? (securityd_servic)
+ 149 /sbin/launchd
+ 152 /usr/libexec/UserEventAgent (Aqua)
+ 153 /usr/sbin/distnoted agent
+ 157 /usr/sbin/cfprefsd agent
+ 158 /System/Library/CoreServices/Dock.app/Contents/MacOS/Dock
+ 160 /System/Library/CoreServices/SystemUIServer.app/Contents/MacOS/SystemUIServer
+ 161 /System/Library/CoreServices/Finder.app/Contents/MacOS/Finder
+ 162 ? (coreaudiod)
+ 167 ? (tccd)
+ 169 ? (xpcd)
+ 170 /usr/libexec/xpcd
+ 171 /usr/sbin/pboard
+ 172 /usr/libexec/sharingd
+ 173 /System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framework/Support/fontd
+ 174 /System/Library/PrivateFrameworks/TCC.framework/Resources/tccd
+ 176 /usr/libexec/librariand
+ 177 /System/Library/PrivateFrameworks/Ubiquity.framework/Versions/A/Support/ubd
+ 181 /Library/Printers/hp/Utilities/HP Utility.app/Contents/Library/LoginItems/HP Device Monitor.app/Contents/MacOS/HP Device Monitor
+ 182 /Applications/1Password 4.app/Contents/Library/LoginItems/2BUA8C4S2C.com.agilebits.onepassword4-helper.app/Contents/MacOS/2BUA8C4S2C.com.agilebits.onepassword4-helper
+ 183 /usr/libexec/WiFiKeychainProxy
+ 184 /usr/sbin/usernoted
+ 185 /System/Library/CoreServices/SocialPushAgent.app/Contents/MacOS/SocialPushAgent
+ 186 /System/Library/PrivateFrameworks/MessagesKit.framework/Resources/soagent.app/Contents/MacOS/soagent
+ 189 /System/Library/CoreServices/NotificationCenter.app/Contents/MacOS/NotificationCenter
+ 191 /usr/libexec/lsboxd
+ 193 /System/Library/PrivateFrameworks/IMCore.framework/imagent.app/Contents/MacOS/imagent
+ 194 /System/Library/PrivateFrameworks/IDSCore.framework/identityservicesd.app/Contents/MacOS/identityservicesd
+ 195 /System/Library/PrivateFrameworks/HelpData.framework/Versions/A/Resources/helpd
+ 197 /System/Library/CoreServices/AppleIDAuthAgent
+ 198 /System/Library/PrivateFrameworks/CalendarAgent.framework/Executables/CalendarAgent
+ 204 /usr/local/opt/redis/bin/redis-server 127.0.0.1:6379  (/usr/local/opt/redis/bin/redis-server)
+ 206 /bin/sh /usr/local/opt/mysql/bin/mysqld_safe --bind-address=127.0.0.1 --datadir=/usr/local/var/mysql
+ 208 /Users/twojcik/Library/Application Support/Spotify/SpotifyWebHelper
+ 210 /System/Library/PrivateFrameworks/SyncedDefaults.framework/Support/syncdefaultsd
+ 217 ? (filecoordination)
+ 230 /Applications/iTunes.app/Contents/MacOS/iTunesHelper.app/Contents/MacOS/iTunesHelper
+ 235 /Users/twojcik/Library/Application Support/Google/Android File Transfer/Android File Transfer Agent.app/Contents/MacOS/Android File Transfer Agent
+ 249 /Applications/RescueTime.app/Contents/MacOS/RescueTime
+ 257 /System/Library/Frameworks/Accounts.framework/Versions/A/Support/accountsd
+ 274 /System/Library/Frameworks/GameKit.framework/Versions/A/Resources/gamed
+ 286 /System/Library/Frameworks/QuickLook.framework/Resources/quicklookd.app/Contents/MacOS/quicklookd
+ 288 /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+ 295 /Applications/Dropbox.app/Contents/MacOS/Dropbox
+ 307 /Applications/Google Drive.app/Contents/MacOS/Google Drive
+ 322 /usr/local/Cellar/mysql/5.6.20/bin/mysqld --basedir=/usr/local/Cellar/mysql/5.6.20 --datadir=/usr/local/var/mysql --plugin-dir=/usr/local/Cellar/mysql/5.6.20/lib/plugin --bind-address=127.0.0.1 --log-error=/usr/local/var/mysql/macbook-air.local.err --pid-file=/usr/local/var/mysql/macbook-air.local.pid
+ 326 /usr/libexec/secd
+ 329 /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/storeagent
+ 330 /Applications/Tunnelblick.app/Contents/MacOS/Tunnelblick
+ 331 /System/Library/Frameworks/CFNetwork.framework/Versions/A/Support/cookied
+ 339 ? (com.apple.audio.)
+ 341 /System/Library/Frameworks/Security.framework/Versions/A/Resources/CloudKeychainProxy.bundle/Contents/MacOS/CloudKeychainProxy
+ 343 /System/Library/CoreServices/System Events.app/Contents/MacOS/System Events
+ 345 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=gpu-process --channel=288.0.485977594 --supports-dual-gpus=false --gpu-driver-bug-workarounds=4,12,23,25,29,38,41,47 --disable-accelerated-video-decode --gpu-vendor-id=0x8086 --gpu-device-id=0x0a26 --gpu-driver-vendor --gpu-driver-version
+ 346 com.apple.IconServicesAgent
+ 347 com.apple.iCloudHelper
+ 348 com.apple.ShareKitHelper
+ 349 com.apple.imdpersistence.IMDPersistenceAgent (/System/Library/PrivateFrameworks/IMDPersistence.framework/XPCServices/IMDPersistenceAgent.xpc/Contents/MacOS/IMDPersistenceAgent)
+ 350 com.apple.dock.extra
+ 355 ? (xpcd)
+ 356 com.apple.internetaccounts
+ 358 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=pl --force-fieldtrials=ChromeSuggestions/Most Likely with Kodachrome/EmbeddedSearch/Group2 pct:10b stable:pp2 prefetch_results:1 reuse_instant_search_base_page:1/ExtensionInstallVerification/None/GoogleNow/Enable/OmniboxBundledExperimentV1/StandardR4/Prerender/PrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Dynamic-Uniformity-Trial/Group3/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-1-Percent/group_60/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_11/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --extension-process --renderer-print-preview --enable-threaded-compositing --disable-accelerated-video-decode --channel=288.1.150597280
+ 361 /Applications/Blotter.app/Contents/MacOS/Blotter
+ 363 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=pl --force-fieldtrials=ChromeSuggestions/Most Likely with Kodachrome/EmbeddedSearch/Group2 pct:10b stable:pp2 prefetch_results:1 reuse_instant_search_base_page:1/ExtensionInstallVerification/None/GoogleNow/Enable/OmniboxBundledExperimentV1/StandardR4/Prerender/PrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/SDCH/Default/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Dynamic-Uniformity-Trial/Group3/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-1-Percent/group_60/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_11/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --extension-process --renderer-print-preview --enable-threaded-compositing --disable-accelerated-video-decode --channel=288.2.208290956
+ 364 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=pl --force-fieldtrials=ChromeSuggestions/Most Likely with Kodachrome/EmbeddedSearch/Group2 pct:10b stable:pp2 prefetch_results:1 reuse_instant_search_base_page:1/ExtensionInstallVerification/None/GoogleNow/Enable/OmniboxBundledExperimentV1/StandardR4/Prerender/PrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/SDCH/Default/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Dynamic-Uniformity-Trial/Group3/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-1-Percent/group_60/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_11/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --extension-process --renderer-print-preview --enable-threaded-compositing --disable-accelerated-video-decode --channel=288.3.1035639905
+ 365 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=pl --force-fieldtrials=ChromeSuggestions/Most Likely with Kodachrome/EmbeddedSearch/Group2 pct:10b stable:pp2 prefetch_results:1 reuse_instant_search_base_page:1/ExtensionInstallVerification/None/GoogleNow/Enable/OmniboxBundledExperimentV1/StandardR4/Prerender/PrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/SDCH/Default/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Dynamic-Uniformity-Trial/Group3/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-1-Percent/group_60/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_11/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --extension-process --renderer-print-preview --enable-threaded-compositing --disable-accelerated-video-decode --channel=288.4.753208737
+ 366 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=pl --force-fieldtrials=ChromeSuggestions/Most Likely with Kodachrome/EmbeddedSearch/Group2 pct:10b stable:pp2 prefetch_results:1 reuse_instant_search_base_page:1/ExtensionInstallVerification/None/GoogleNow/Enable/OmniboxBundledExperimentV1/StandardR4/Prerender/PrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/SDCH/Default/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Dynamic-Uniformity-Trial/Group3/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-1-Percent/group_60/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_11/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --extension-process --renderer-print-preview --enable-threaded-compositing --disable-accelerated-video-decode --channel=288.5.2042405238
+ 367 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=pl --force-fieldtrials=ChromeSuggestions/Most Likely with Kodachrome/EmbeddedSearch/Group2 pct:10b stable:pp2 prefetch_results:1 reuse_instant_search_base_page:1/ExtensionInstallVerification/None/GoogleNow/Enable/OmniboxBundledExperimentV1/StandardR4/Prerender/PrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/SDCH/Default/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Dynamic-Uniformity-Trial/Group3/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-1-Percent/group_60/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_11/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --extension-process --renderer-print-preview --enable-threaded-compositing --disable-accelerated-video-decode --channel=288.6.1711307340
+ 368 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=pl --force-fieldtrials=ChromeSuggestions/Most Likely with Kodachrome/EmbeddedSearch/Group2 pct:10b stable:pp2 prefetch_results:1 reuse_instant_search_base_page:1/ExtensionInstallVerification/None/GoogleNow/Enable/OmniboxBundledExperimentV1/StandardR4/Prerender/PrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/SDCH/Default/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Dynamic-Uniformity-Trial/Group3/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-1-Percent/group_60/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_11/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --extension-process --renderer-print-preview --enable-threaded-compositing --disable-accelerated-video-decode --channel=288.7.1774760816
+ 369 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=pl --force-fieldtrials=ChromeSuggestions/Most Likely with Kodachrome/EmbeddedSearch/Group2 pct:10b stable:pp2 prefetch_results:1 reuse_instant_search_base_page:1/ExtensionInstallVerification/None/GoogleNow/Enable/OmniboxBundledExperimentV1/StandardR4/Prerender/PrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/SDCH/Default/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Dynamic-Uniformity-Trial/Group3/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-1-Percent/group_60/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_11/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --extension-process --renderer-print-preview --enable-threaded-compositing --disable-accelerated-video-decode --channel=288.8.855735827
+ 371 com.apple.NotesMigratorService
+ 382 ? (automountd)
+ 400 ? (netbiosd)
+ 404 ? (softwareupdated)
+ 405 ? (xpcd)
+ 413 ? (suhelperd)
+ 422 /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/CVMCompiler 2
+ 428 /System/Library/CoreServices/pbs
+ 430 ? (dbfseventsd)
+ 431 ? (dbfseventsd)
+ 432 /Library/DropboxHelperTools/Dropbox_u501/dbfseventsd
+ 436 ? (launchd)
+ 438 ? (mdworker)
+ 439 ? (distnoted)
+ 442 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=pl --force-fieldtrials=ChromeSuggestions/Most Likely with Kodachrome/EmbeddedSearch/Group2 pct:10b stable:pp2 prefetch_results:1 reuse_instant_search_base_page:1/ExtensionInstallVerification/None/GoogleNow/Enable/OmniboxBundledExperimentV1/StandardR4/Prerender/PrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/SDCH/Default/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Dynamic-Uniformity-Trial/Group3/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-1-Percent/group_60/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_11/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --renderer-print-preview --instant-process --enable-threaded-compositing --disable-accelerated-video-decode --channel=288.11.1741020627
+ 443 ? (AppleCameraAssis)
+ 444 /Applications/iTerm.app/Contents/MacOS/iTerm
+ 446 /System/Library/Image Capture/Support/Image Capture Extension.app/Contents/MacOS/Image Capture Extension
+ 447 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+ 448 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+ 449 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+ 450 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+ 453 ? (login)
+ 454 -zsh (/usr/local/bin/zsh)
+ 477 /System/Library/CoreServices/AirPlayUIAgent.app/Contents/MacOS/AirPlayUIAgent --launchd
+ 614 ? (mdworker)
+ 615 ? (mdworker)
+ 616 ? (mdworker)
+1426 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdflagwriter
+1449 tmux
+1502 -zsh (/usr/local/bin/zsh)
+1554 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker-bundle -c MDSImporterBundleFinder -m com.apple.mdworker.bundles
+1556 ? (mdworker)
+1595 tmux new-session -s pbox
+1596 -zsh (/usr/local/bin/zsh)
+1648 /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/Support/fontworker
+1650 bash /Users/twojcik/.tmux/plugins/tmux-resurrect/scripts/save.sh
+1666 bash /Users/twojcik/.tmux/plugins/tmux-resurrect/scripts/tmux_spinner.sh Saving... Tmux environment saved!
+1675 sleep 0.1
+1682 bash /Users/twojcik/.tmux/plugins/tmux-resurrect/scripts/save.sh
+1685 bash /Users/twojcik/.tmux/plugins/tmux-resurrect/scripts/save.sh
+1687 cut -d  -f2-
+pane	pbox	1	:zsh	1	:*	0	:/Users/twojcik	1	zsh	:   0 ? (kernel_task)
+   1 ? (launchd)
+   2 ? (launchctl)
+  13 ? (UserEventAgent)
+  14 ? (kextd)
+  15 ? (taskgated)
+  16 ? (notifyd)
+  17 ? (securityd)
+  18 ? (diskarbitrationd)
+  19 ? (powerd)
+  20 ? (configd)
+  21 ? (syslogd)
+  23 ? (distnoted)
+  24 ? (opendirectoryd)
+  26 ? (cfprefsd)
+  27 ? (xpcd)
+  37 ? (authd)
+  38 ? (coreservicesd)
+  39 ? (backupd)
+  41 ? (fseventsd)
+  42 ? (usbd)
+  43 ? (mDNSResponder)
+  44 ? (networkd)
+  46 ? (sysmond)
+  48 ? (systemkeychain)
+  61 ? (networkd_privile)
+  64 ? (ntpd)
+  65 ? (cron)
+  66 ? (wdhelper)
+  67 ? (warmd)
+  68 ? (usbmuxd)
+  71 ? (stackshot)
+  74 ? (SleepServicesD)
+  76 ? (revisiond)
+  79 ? (pacemaker)
+  82 ? (mds)
+  85 /System/Library/CoreServices/loginwindow.app/Contents/MacOS/loginwindow console
+  86 ? (logind)
+  87 ? (locationd)
+  88 ? (KernelEventAgent)
+  90 ? (hidd)
+  92 ? (dynamic_pager)
+  94 ? (dpd)
+  96 ? (corestoraged)
+  97 ? (launchservicesd)
+  98 ? (appleeventsd)
+ 102 ? (autofsd)
+ 103 ? (apsd)
+ 104 ? (aosnotifyd)
+ 105 ? (socketfilterfw)
+ 106 ? (airportd)
+ 107 ? (digest-service)
+ 112 ? (WindowServer)
+ 113 ? (rpcsvchost)
+ 117 ? (ocspd)
+ 118 ? (mds_stores)
+ 119 ? (CVMServer)
+ 120 ? (launchd)
+ 124 ? (sandboxd)
+ 133 ? (com.apple.CodeSi)
+ 134 ? (gkbisd)
+ 138 ? (coresymbolicatio)
+ 141 ? (CVMCompiler)
+ 143 ? (securityd_servic)
+ 149 /sbin/launchd
+ 152 /usr/libexec/UserEventAgent (Aqua)
+ 153 /usr/sbin/distnoted agent
+ 157 /usr/sbin/cfprefsd agent
+ 158 /System/Library/CoreServices/Dock.app/Contents/MacOS/Dock
+ 160 /System/Library/CoreServices/SystemUIServer.app/Contents/MacOS/SystemUIServer
+ 161 /System/Library/CoreServices/Finder.app/Contents/MacOS/Finder
+ 162 ? (coreaudiod)
+ 167 ? (tccd)
+ 169 ? (xpcd)
+ 170 /usr/libexec/xpcd
+ 171 /usr/sbin/pboard
+ 172 /usr/libexec/sharingd
+ 173 /System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framework/Support/fontd
+ 174 /System/Library/PrivateFrameworks/TCC.framework/Resources/tccd
+ 176 /usr/libexec/librariand
+ 177 /System/Library/PrivateFrameworks/Ubiquity.framework/Versions/A/Support/ubd
+ 181 /Library/Printers/hp/Utilities/HP Utility.app/Contents/Library/LoginItems/HP Device Monitor.app/Contents/MacOS/HP Device Monitor
+ 182 /Applications/1Password 4.app/Contents/Library/LoginItems/2BUA8C4S2C.com.agilebits.onepassword4-helper.app/Contents/MacOS/2BUA8C4S2C.com.agilebits.onepassword4-helper
+ 183 /usr/libexec/WiFiKeychainProxy
+ 184 /usr/sbin/usernoted
+ 185 /System/Library/CoreServices/SocialPushAgent.app/Contents/MacOS/SocialPushAgent
+ 186 /System/Library/PrivateFrameworks/MessagesKit.framework/Resources/soagent.app/Contents/MacOS/soagent
+ 189 /System/Library/CoreServices/NotificationCenter.app/Contents/MacOS/NotificationCenter
+ 191 /usr/libexec/lsboxd
+ 193 /System/Library/PrivateFrameworks/IMCore.framework/imagent.app/Contents/MacOS/imagent
+ 194 /System/Library/PrivateFrameworks/IDSCore.framework/identityservicesd.app/Contents/MacOS/identityservicesd
+ 195 /System/Library/PrivateFrameworks/HelpData.framework/Versions/A/Resources/helpd
+ 197 /System/Library/CoreServices/AppleIDAuthAgent
+ 198 /System/Library/PrivateFrameworks/CalendarAgent.framework/Executables/CalendarAgent
+ 204 /usr/local/opt/redis/bin/redis-server 127.0.0.1:6379  (/usr/local/opt/redis/bin/redis-server)
+ 206 /bin/sh /usr/local/opt/mysql/bin/mysqld_safe --bind-address=127.0.0.1 --datadir=/usr/local/var/mysql
+ 208 /Users/twojcik/Library/Application Support/Spotify/SpotifyWebHelper
+ 210 /System/Library/PrivateFrameworks/SyncedDefaults.framework/Support/syncdefaultsd
+ 217 ? (filecoordination)
+ 230 /Applications/iTunes.app/Contents/MacOS/iTunesHelper.app/Contents/MacOS/iTunesHelper
+ 235 /Users/twojcik/Library/Application Support/Google/Android File Transfer/Android File Transfer Agent.app/Contents/MacOS/Android File Transfer Agent
+ 249 /Applications/RescueTime.app/Contents/MacOS/RescueTime
+ 257 /System/Library/Frameworks/Accounts.framework/Versions/A/Support/accountsd
+ 274 /System/Library/Frameworks/GameKit.framework/Versions/A/Resources/gamed
+ 286 /System/Library/Frameworks/QuickLook.framework/Resources/quicklookd.app/Contents/MacOS/quicklookd
+ 288 /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+ 295 /Applications/Dropbox.app/Contents/MacOS/Dropbox
+ 307 /Applications/Google Drive.app/Contents/MacOS/Google Drive
+ 322 /usr/local/Cellar/mysql/5.6.20/bin/mysqld --basedir=/usr/local/Cellar/mysql/5.6.20 --datadir=/usr/local/var/mysql --plugin-dir=/usr/local/Cellar/mysql/5.6.20/lib/plugin --bind-address=127.0.0.1 --log-error=/usr/local/var/mysql/macbook-air.local.err --pid-file=/usr/local/var/mysql/macbook-air.local.pid
+ 326 /usr/libexec/secd
+ 329 /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/storeagent
+ 330 /Applications/Tunnelblick.app/Contents/MacOS/Tunnelblick
+ 331 /System/Library/Frameworks/CFNetwork.framework/Versions/A/Support/cookied
+ 339 ? (com.apple.audio.)
+ 341 /System/Library/Frameworks/Security.framework/Versions/A/Resources/CloudKeychainProxy.bundle/Contents/MacOS/CloudKeychainProxy
+ 343 /System/Library/CoreServices/System Events.app/Contents/MacOS/System Events
+ 345 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=gpu-process --channel=288.0.485977594 --supports-dual-gpus=false --gpu-driver-bug-workarounds=4,12,23,25,29,38,41,47 --disable-accelerated-video-decode --gpu-vendor-id=0x8086 --gpu-device-id=0x0a26 --gpu-driver-vendor --gpu-driver-version
+ 346 com.apple.IconServicesAgent
+ 347 com.apple.iCloudHelper
+ 348 com.apple.ShareKitHelper
+ 349 com.apple.imdpersistence.IMDPersistenceAgent (/System/Library/PrivateFrameworks/IMDPersistence.framework/XPCServices/IMDPersistenceAgent.xpc/Contents/MacOS/IMDPersistenceAgent)
+ 350 com.apple.dock.extra
+ 355 ? (xpcd)
+ 356 com.apple.internetaccounts
+ 358 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=pl --force-fieldtrials=ChromeSuggestions/Most Likely with Kodachrome/EmbeddedSearch/Group2 pct:10b stable:pp2 prefetch_results:1 reuse_instant_search_base_page:1/ExtensionInstallVerification/None/GoogleNow/Enable/OmniboxBundledExperimentV1/StandardR4/Prerender/PrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Dynamic-Uniformity-Trial/Group3/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-1-Percent/group_60/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_11/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --extension-process --renderer-print-preview --enable-threaded-compositing --disable-accelerated-video-decode --channel=288.1.150597280
+ 361 /Applications/Blotter.app/Contents/MacOS/Blotter
+ 363 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=pl --force-fieldtrials=ChromeSuggestions/Most Likely with Kodachrome/EmbeddedSearch/Group2 pct:10b stable:pp2 prefetch_results:1 reuse_instant_search_base_page:1/ExtensionInstallVerification/None/GoogleNow/Enable/OmniboxBundledExperimentV1/StandardR4/Prerender/PrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/SDCH/Default/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Dynamic-Uniformity-Trial/Group3/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-1-Percent/group_60/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_11/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --extension-process --renderer-print-preview --enable-threaded-compositing --disable-accelerated-video-decode --channel=288.2.208290956
+ 364 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=pl --force-fieldtrials=ChromeSuggestions/Most Likely with Kodachrome/EmbeddedSearch/Group2 pct:10b stable:pp2 prefetch_results:1 reuse_instant_search_base_page:1/ExtensionInstallVerification/None/GoogleNow/Enable/OmniboxBundledExperimentV1/StandardR4/Prerender/PrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/SDCH/Default/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Dynamic-Uniformity-Trial/Group3/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-1-Percent/group_60/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_11/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --extension-process --renderer-print-preview --enable-threaded-compositing --disable-accelerated-video-decode --channel=288.3.1035639905
+ 365 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=pl --force-fieldtrials=ChromeSuggestions/Most Likely with Kodachrome/EmbeddedSearch/Group2 pct:10b stable:pp2 prefetch_results:1 reuse_instant_search_base_page:1/ExtensionInstallVerification/None/GoogleNow/Enable/OmniboxBundledExperimentV1/StandardR4/Prerender/PrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/SDCH/Default/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Dynamic-Uniformity-Trial/Group3/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-1-Percent/group_60/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_11/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --extension-process --renderer-print-preview --enable-threaded-compositing --disable-accelerated-video-decode --channel=288.4.753208737
+ 366 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=pl --force-fieldtrials=ChromeSuggestions/Most Likely with Kodachrome/EmbeddedSearch/Group2 pct:10b stable:pp2 prefetch_results:1 reuse_instant_search_base_page:1/ExtensionInstallVerification/None/GoogleNow/Enable/OmniboxBundledExperimentV1/StandardR4/Prerender/PrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/SDCH/Default/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Dynamic-Uniformity-Trial/Group3/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-1-Percent/group_60/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_11/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --extension-process --renderer-print-preview --enable-threaded-compositing --disable-accelerated-video-decode --channel=288.5.2042405238
+ 367 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=pl --force-fieldtrials=ChromeSuggestions/Most Likely with Kodachrome/EmbeddedSearch/Group2 pct:10b stable:pp2 prefetch_results:1 reuse_instant_search_base_page:1/ExtensionInstallVerification/None/GoogleNow/Enable/OmniboxBundledExperimentV1/StandardR4/Prerender/PrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/SDCH/Default/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Dynamic-Uniformity-Trial/Group3/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-1-Percent/group_60/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_11/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --extension-process --renderer-print-preview --enable-threaded-compositing --disable-accelerated-video-decode --channel=288.6.1711307340
+ 368 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=pl --force-fieldtrials=ChromeSuggestions/Most Likely with Kodachrome/EmbeddedSearch/Group2 pct:10b stable:pp2 prefetch_results:1 reuse_instant_search_base_page:1/ExtensionInstallVerification/None/GoogleNow/Enable/OmniboxBundledExperimentV1/StandardR4/Prerender/PrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/SDCH/Default/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Dynamic-Uniformity-Trial/Group3/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-1-Percent/group_60/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_11/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --extension-process --renderer-print-preview --enable-threaded-compositing --disable-accelerated-video-decode --channel=288.7.1774760816
+ 369 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=pl --force-fieldtrials=ChromeSuggestions/Most Likely with Kodachrome/EmbeddedSearch/Group2 pct:10b stable:pp2 prefetch_results:1 reuse_instant_search_base_page:1/ExtensionInstallVerification/None/GoogleNow/Enable/OmniboxBundledExperimentV1/StandardR4/Prerender/PrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/SDCH/Default/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Dynamic-Uniformity-Trial/Group3/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-1-Percent/group_60/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_11/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --extension-process --renderer-print-preview --enable-threaded-compositing --disable-accelerated-video-decode --channel=288.8.855735827
+ 371 com.apple.NotesMigratorService
+ 382 ? (automountd)
+ 400 ? (netbiosd)
+ 404 ? (softwareupdated)
+ 405 ? (xpcd)
+ 413 ? (suhelperd)
+ 422 /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/CVMCompiler 2
+ 428 /System/Library/CoreServices/pbs
+ 430 ? (dbfseventsd)
+ 431 ? (dbfseventsd)
+ 432 /Library/DropboxHelperTools/Dropbox_u501/dbfseventsd
+ 436 ? (launchd)
+ 438 ? (mdworker)
+ 439 ? (distnoted)
+ 442 /Applications/Google Chrome.app/Contents/Versions/37.0.2062.94/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --lang=pl --force-fieldtrials=ChromeSuggestions/Most Likely with Kodachrome/EmbeddedSearch/Group2 pct:10b stable:pp2 prefetch_results:1 reuse_instant_search_base_page:1/ExtensionInstallVerification/None/GoogleNow/Enable/OmniboxBundledExperimentV1/StandardR4/Prerender/PrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/SDCH/Default/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-Dynamic-Uniformity-Trial/Group3/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-1-Percent/group_60/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_11/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --renderer-print-preview --instant-process --enable-threaded-compositing --disable-accelerated-video-decode --channel=288.11.1741020627
+ 443 ? (AppleCameraAssis)
+ 444 /Applications/iTerm.app/Contents/MacOS/iTerm
+ 446 /System/Library/Image Capture/Support/Image Capture Extension.app/Contents/MacOS/Image Capture Extension
+ 447 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+ 448 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+ 449 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+ 450 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+ 453 ? (login)
+ 454 -zsh (/usr/local/bin/zsh)
+ 477 /System/Library/CoreServices/AirPlayUIAgent.app/Contents/MacOS/AirPlayUIAgent --launchd
+ 614 ? (mdworker)
+ 615 ? (mdworker)
+ 616 ? (mdworker)
+1426 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdflagwriter
+1449 tmux
+1502 -zsh (/usr/local/bin/zsh)
+1554 /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker-bundle -c MDSImporterBundleFinder -m com.apple.mdworker.bundles
+1556 ? (mdworker)
+1595 tmux new-session -s pbox
+1596 -zsh (/usr/local/bin/zsh)
+1648 /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/Support/fontworker
+1650 bash /Users/twojcik/.tmux/plugins/tmux-resurrect/scripts/save.sh
+1666 bash /Users/twojcik/.tmux/plugins/tmux-resurrect/scripts/tmux_spinner.sh Saving... Tmux environment saved!
+1675 sleep 0.1
+1682 bash /Users/twojcik/.tmux/plugins/tmux-resurrect/scripts/save.sh
+1688 bash /Users/twojcik/.tmux/plugins/tmux-resurrect/scripts/save.sh
+1690 cut -d  -f2-
+window	ink	1	1	:*	b25d,80x24,0,0,0
+window	pbox	1	1	:*	b25f,80x24,0,0,2
+state	pbox	
