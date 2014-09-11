@@ -77,6 +77,7 @@ setup_zsh() {
 
 setup_tmux() {
   echo "Linking tmux configuration."
+  slnk "$DOTFILES/tmux" "$HOME/.tmux"
   slnk "$DOTFILES/tmux/tmux.conf" "$HOME/.tmux.conf"
 }
 
