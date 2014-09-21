@@ -1,24 +1,13 @@
-# Emacs
-\#*#
-
-# Adom
-*.bak
-
-# P4merge
+# P4Merge
 *.orig
 
-# Tmux plugins
-tmux/plugins/*
-tmux/resurrect/last
-tmux_resurrect_*.txt
-
-
-# VIm
+# Vim
 *.swp
 *.swo
-.netrwhist
 tags
-!tags/
+
+# Ruby
+.ruby-version
 
 # C-like
 *.obj
@@ -32,23 +21,6 @@ target/
 *.iws
 *.class
 
-# Rails, Ruby
-*.sqlite3
-config/database.yml
-config/ldap.yml
-config/newrelic.yml
-config/paypal.yml
-config/paypal-sdk.yml
-.rspec
-.env
-
-# Printbox / Ink Labs
-public/library
-
-# Zeus
-custom_plan.rb
-zeus.json
-
 # Logs, temps and misc
 log/
 tmp/
@@ -56,12 +28,6 @@ tmp/
 *.tmp
 *.out
 
-# RVM
-.rvmrc
-.ruby-version
-.ruby-gemset
-
 # Mac
 .DS_STORE
 .DS_Store
-
