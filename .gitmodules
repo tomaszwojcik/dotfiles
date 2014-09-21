@@ -4,9 +4,6 @@
 [submodule "vim/bundle/ctrlp"]
 	path = vim/bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule "vim/bundle/gist-vim"]
-	path = vim/bundle/gist-vim
-	url = https://github.com/mattn/gist-vim.git
 [submodule "vim/bundle/vim-bundler"]
 	path = vim/bundle/vim-bundler
 	url = https://github.com/tpope/vim-bundler.git
@@ -97,12 +94,6 @@
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
-[submodule "vim/bundle/cocoa.vim"]
-	path = vim/bundle/cocoa.vim
-	url = https://github.com/msanders/cocoa.vim.git
-[submodule "vim/bundle/gruvbox"]
-	path = vim/bundle/gruvbox
-	url = https://github.com/morhetz/gruvbox.git
 [submodule "mc/mc"]
 	path = mc/mc
 	url = https://github.com/peel/mc.git
