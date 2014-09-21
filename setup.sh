@@ -85,12 +85,13 @@ setup_vim() {
   echo "Linking Vim configuration."
   slnk "$DOTFILES/vim/vimrc" "$HOME/.vimrc"
   slnk "$DOTFILES/vim/vim" "$HOME/.vim"
+  mkdir ~/vim_tmp
 }
 
 setup_git() {
   echo "Linking Git configuration."
   slnk "$DOTFILES/git/gitignore" "$HOME/.gitignore"
-  slnk "$DOTFILES/git/config" "$HOME/.gitconfig"
+  slnk "$DOTFILES/git/gitconfig" "$HOME/.gitconfig"
 }
 
 slnk() {

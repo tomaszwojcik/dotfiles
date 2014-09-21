@@ -5,10 +5,12 @@ tmux
 tree
 curl
 wget
+htop
 autojump
 the_silver_searcher
 pgrep
 git
+tig
 svn
 libtiff
 imagemagick

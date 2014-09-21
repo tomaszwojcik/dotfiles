@@ -5,7 +5,11 @@
 *.bak
 
 # P4merge
-# *.orig
+*.orig
+
+# Tmux plugins
+tmux_resurrect_*.txt
+
 
 # VIm
 *.swp
