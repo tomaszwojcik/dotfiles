@@ -58,17 +58,7 @@ vmap <leader>= :Tab /=<CR>
 nmap <leader>{ :Tab /{<CR>
 vmap <leader>{ :Tab /{<CR>
 nmap <leader>: :Tab /:\zs<CR>
-vmap <leader>: :Tab /:\zs<CR><leader>= :Tab /=<CR>
-vmap <leader>= :Tab /=<CR>
-nmap <leader>{ :Tab /{<CR>
-vmap <leader>{ :Tab /{<CR>
-nmap <leader>: :Tab /:\zs<CR>
 vmap <leader>: :Tab /:\zs<CR>
-
-" Bookmarks
-nmap <leader>bl :CopenBookmarks<CR>
-nmap <leader>ba :Bookmark 
-nmap <leader>bd :DelBookmark 
 
 " Higlight unwanted spaces
 set listchars=tab:▸\ ,trail:.
