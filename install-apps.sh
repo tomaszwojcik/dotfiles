@@ -33,6 +33,7 @@ skype
 libreoffice
 rescuetime
 dash
+mactex
 )
 
 manual_install_apps=(

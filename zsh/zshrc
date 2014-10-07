@@ -63,4 +63,11 @@ source /usr/local/opt/chruby/share/chruby/auto.sh
 
 export PATH=/usr/local/bin:$PATH
 
+LANG=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+export LANG LC_ALL
+
 chruby ruby-2.1.2
+
+# LaTeX
+eval `/usr/libexec/path_helper -s`

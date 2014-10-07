@@ -118,3 +118,9 @@
 [submodule "vim/bundle/vim-emoji"]
 	path = vim/bundle/vim-emoji
 	url = https://github.com/junegunn/vim-emoji.git
+[submodule "vim/bundle/vim-latex"]
+	path = vim/bundle/vim-latex
+	url = https://github.com/lervag/vim-latex.git
+[submodule "vim/bundle/vim-latex-live-preview"]
+	path = vim/bundle/vim-latex-live-preview
+	url = https://github.com/xuhdev/vim-latex-live-preview.git

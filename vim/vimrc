@@ -78,6 +78,10 @@ map <leader>p :ClearAllCtrlPCaches<CR>
 " Emmet
 map <leader>o <C-y>,
 
+" LaTeX live preview
+let g:
+let g:livepreview_previewer = 'open -a Preview'
+
 " Fix syntax highlighting
 noremap <leader>` <Esc>:syntax sync fromstart<CR>
 inoremap <leader` <C-o>:syntax sync fromstart<CR>
@@ -128,7 +132,7 @@ let g:gitgutter_sign_modified_removed = '!'
 
 set tags=tags;/
 " Don't pollute dirs with swap and temporary files
-set backupdir=~/.vim_tmp
+set backupdir=~/.vim_bck
 set directory=~/.vim_tmp
 
 " Set pwd to the current dir
