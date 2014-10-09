@@ -124,3 +124,6 @@
 [submodule "vim/bundle/vim-latex-live-preview"]
 	path = vim/bundle/vim-latex-live-preview
 	url = https://github.com/xuhdev/vim-latex-live-preview.git
+[submodule "vim/bundle/vim-latex-preview"]
+	path = vim/bundle/vim-latex-preview
+	url = git@github.com:tomaszwojcik/vim-latex-preview.git

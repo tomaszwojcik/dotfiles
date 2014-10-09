@@ -46,7 +46,7 @@ let NERDTreeShowHidden=1
 
 " Run tests
 let g:rspec_runner = "os_x_iterm"
-let g:rspec_command = "Dispatch bundle exec rspec {spec}"
+let g:rspec_command = "bundle exec rspec {spec}"
 
 map <leader>t :w<CR>:call RunCurrentSpecFile()<CR>
 map <leader>l :w<CR>:call RunNearestSpec()<CR>
@@ -79,8 +79,7 @@ map <leader>P :ClearAllCtrlPCaches<CR>
 map <leader>o <C-y>,
 
 " LaTeX live preview
-let g:livepreview_previewer = 'open -a Preview'
-nmap <leader>pp :call LatexToPdfFile()<CR>
+" nmap <leader>pp :call PreviewLatexAsPdf()<CR>
 
 " Fix syntax highlighting
 noremap <leader>` <Esc>:syntax sync fromstart<CR>
@@ -102,10 +101,6 @@ set backspace=2
 set laststatus=2
 " Git status line
 set statusline=%<%f%m\ %r\ %=%l,%c\ %p%%\ %y\ %{fugitive#statusline()}
-
-" vim-ruby-debugger options
-let g:ruby_debugger_progname = 'mvim'
-let g:ruby_debugger_debug_mode = 1
 
 " vim-rubocop
 let g:vimrubocop_keymap = 0
@@ -187,11 +182,11 @@ function! <SID>SynStack()
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 
-" Generate PDF from current LaTeX file and launch OS X Preview
-function! LatexToPdfFile()
-  let currentfile = expand("%:p")
-  exec 'call system("pdflatex " . currentfile)'
-  let outputfile = substitute(currentfile, ".tex$", ".pdf", "")
-  exec 'call system("open -a Preview " . outputfile)'
-  echo 'Finished generating PDF preview:' outputfile
-endfunc
+" " Generate PDF from current LaTeX file and launch OS X Preview
+" function! PreviewLatexAsPdf()
+"   let currentfile = expand("%:p")
+"   exec 'call system("pdflatex " . currentfile)'
+"   let outputfile = substitute(currentfile, ".tex$", ".pdf", "")
+"   exec 'call system("open -a Preview " . outputfile)'
+"   echo 'Finished generating PDF preview:' outputfile
+" endfunc
