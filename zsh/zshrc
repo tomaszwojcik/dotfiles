@@ -61,8 +61,6 @@ source $DOTFILES_ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
-export PATH=/usr/local/bin:$PATH
-
 LANG=en_US.UTF-8
 LC_ALL=en_US.UTF-8
 export LANG LC_ALL
@@ -71,3 +69,5 @@ chruby ruby-2.1.2
 
 # LaTeX
 eval `/usr/libexec/path_helper -s`
+
+export PATH=/usr/local/bin:$PATH

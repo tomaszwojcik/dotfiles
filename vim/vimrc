@@ -181,12 +181,3 @@ function! <SID>SynStack()
   endif
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
-
-" " Generate PDF from current LaTeX file and launch OS X Preview
-" function! PreviewLatexAsPdf()
-"   let currentfile = expand("%:p")
-"   exec 'call system("pdflatex " . currentfile)'
-"   let outputfile = substitute(currentfile, ".tex$", ".pdf", "")
-"   exec 'call system("open -a Preview " . outputfile)'
-"   echo 'Finished generating PDF preview:' outputfile
-" endfunc
