@@ -2,12 +2,12 @@ set background=light
 colorscheme solarized
 
 if has("gui_running")
-  " Some stuff here is MacVim specific
   set guifont=Monaco:h14
   " Weird thing that turning off right scroll bar is 'r' and turning off left
   " is capital 'L'
   set guioptions-=r
   set guioptions-=L
+  set guioptions-=a
 else
   set t_Co=256
 endif
@@ -29,27 +29,30 @@ filetype plugin indent on
 set cursorline
 set colorcolumn=80
 
-" MacVim specific options
-set clipboard=unnamed
+if has('unnamedplus')
+  set clipboard=unnamed,unnamedplus
+endif
 
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 let g:agprg = 'ag --nogroup --nocolor --column'
 
 let mapleader = ','
-map <leader>/ :so ~/.vimrc<cr>:noh<cr>
-map <leader>e :e %%
 
 let NERDTreeShowHidden=1
 
 " Movement stuff
-"onoremap in :<c-u>normal! f(vi(<cr>
+onoremap in :<c-u>normal! f(vi(<cr>
 
 " Run tests
 let g:rspec_runner = "os_x_iterm"
-let g:rspec_command = "bundle exec rspec {spec}"
+let g:rspec_command = "Dispatch bundle exec rspec {spec}"
 
 map <leader>t :w<CR>:call RunCurrentSpecFile()<CR>
 map <leader>l :w<CR>:call RunNearestSpec()<CR>
+
+" Vim
+map <leader>/ :so ~/.vimrc<cr>:noh<cr>
+map <leader>e :e %%
 
 " Tabular
 nmap <leader>= :Tab /=<CR>
@@ -70,7 +73,7 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 " Retag
-map <leader>c :!ctags -R<CR>
+map <leader>R :call Retag()<CR>
 
 " Ctrl-P
 map <leader>P :ClearAllCtrlPCaches<CR>
@@ -78,12 +81,9 @@ map <leader>P :ClearAllCtrlPCaches<CR>
 " Emmet
 map <leader>o <C-y>,
 
-" LaTeX live preview
-" nmap <leader>pp :call PreviewLatexAsPdf()<CR>
-
 " Fix syntax highlighting
 noremap <leader>` <Esc>:syntax sync fromstart<CR>
-inoremap <leader` <C-o>:syntax sync fromstart<CR>
+inoremap <leader>` <C-o>:syntax sync fromstart<CR>
 
 " Search options
 set hlsearch
@@ -91,7 +91,7 @@ set incsearch
 set ignorecase smartcase
 
 " Flexible windows
-set winwidth=84
+set winwidth=80
 set winheight=8
 set winminheight=8
 set winheight=999
@@ -150,12 +150,6 @@ augroup dev_files
 
   au FileType java,python,cs set sw=4 sts=4 et
   au BufRead,BufNewFile *.rabl setf ruby
-  "autocmd FileType ruby
-  "      \ if expand("%") =~# '_spec\.rb$' |
-  "      \   compiler rspec | setl makeprg=rspec\ $*|
-  "      \ else |
-  "      \   compiler ruby | setl makeprg=ruby\ -wc\ \"%:p\" |
-  "      \ endif
 augroup END
 
 
@@ -180,4 +174,9 @@ function! <SID>SynStack()
     return
   endif
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
+function! Retag()
+  silent :!ctags -R
+  echom 'Retagged!'
 endfunc
