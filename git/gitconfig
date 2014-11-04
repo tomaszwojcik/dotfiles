@@ -1,14 +1,14 @@
 [user]
-	name = 
-	email = 
+  name = Tomasz Wójcik
+  email = wojcik.tomek@gmail.com
 
 [github]
   user = tomaszwojcik
 
 [core]
-	excludesfile = /Users/twojcik/.gitignore
+  excludesfile = ~/.gitignore
   editor       = vim
-	autocrlf = input
+  autocrlf = input
 
 [merge]
   tool = p4merge
@@ -52,9 +52,3 @@
   ls   = ls-files
   undo = reset --soft HEAD^
   a    = add -A
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /opt/homebrew-cask/Caskroom/sourcetree/1.9.8/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true

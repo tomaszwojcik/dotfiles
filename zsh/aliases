@@ -1,4 +1,4 @@
-alias ll='ls -l'
+alias ll='ls -lah'
 alias htop='sudo htop'
 
 # Ruby and RoR aliases
