@@ -90,7 +90,7 @@
 	url = https://github.com/tpope/vim-haml.git
 [submodule "vim/bundle/vim-swift"]
 	path = vim/bundle/vim-swift
-	url = https://github.com/toyamarinyon/vim-swift.git
+	url = git@github.com:kballard/vim-swift.git
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
@@ -127,3 +127,15 @@
 [submodule "vim/bundle/vim-latex-preview"]
 	path = vim/bundle/vim-latex-preview
 	url = git@github.com:tomaszwojcik/vim-latex-preview.git
+[submodule "vim/bundle/swift.vim"]
+	path = vim/bundle/swift.vim
+	url = git@github.com:Keithbsmiley/swift.vim.git
+[submodule "vim/bundle/vim-github-colorscheme"]
+	path = vim/bundle/vim-github-colorscheme
+	url = git@github.com:endel/vim-github-colorscheme.git
+[submodule "vim/bundle/jellybeans.vim"]
+	path = vim/bundle/jellybeans.vim
+	url = git@github.com:nanotech/jellybeans.vim.git
+[submodule "vim/bundle/indentLine"]
+	path = vim/bundle/indentLine
+	url = git@github.com:Yggdroot/indentLine.git

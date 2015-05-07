@@ -31,3 +31,9 @@ tmp/
 # Mac
 .DS_STORE
 .DS_Store
+
+# XCode
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+Pods/
