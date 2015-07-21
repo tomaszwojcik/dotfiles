@@ -229,7 +229,7 @@ endfunction
 
 
 if has("gui_running")
-  colorscheme earthsong
+  colorscheme spacedust
 else
   colorscheme jellybeans
 end

@@ -8,6 +8,7 @@ tags
 
 # Ruby
 .ruby-version
+.env
 
 # C-like
 *.obj

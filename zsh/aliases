@@ -28,3 +28,6 @@ alias mc='nocorrect mc'
 alias irssi='nocorrect irssi'
 alias rspec='nocorrect rspec'
 alias cmake='nocorrect cmake'
+
+# XCode
+alias bumpversion='agvtool next-version -all'
