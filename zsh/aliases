@@ -30,4 +30,5 @@ alias rspec='nocorrect rspec'
 alias cmake='nocorrect cmake'
 
 # XCode
-alias bumpversion='agvtool next-version -all'
+alias xc-set-build='agvtool new-version -all'
+alias xc-bump-build='agvtool next-version -all'
