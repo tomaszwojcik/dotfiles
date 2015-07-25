@@ -161,6 +161,7 @@ augroup dev_files
 
   au FileType java,python,cs set sw=4 sts=4 et
   au BufRead,BufNewFile *.rabl setf ruby
+  au BufRead,BufNewFile Podfile set filetype=ruby
 augroup END
 
 
