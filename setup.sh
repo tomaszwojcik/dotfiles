@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-DOTFILES="$HOME/work/dotfiles"
+DOTFILES="$HOME/Development/dotfiles"
 
 declare -a RUBY_VERSIONS=("1.9.3" "2.0" "2.1")
 BREW_APPS="tmux tree macvim ruby-install chruby autojump mercurial git svn"
