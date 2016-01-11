@@ -38,3 +38,6 @@ tmp/
 project.xcworkspace/
 xcuserdata/
 Pods/
+
+# Fastlane tools
+test_output/
