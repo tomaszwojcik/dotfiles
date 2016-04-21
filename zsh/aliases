@@ -32,3 +32,6 @@ alias cmake='nocorrect cmake'
 # XCode
 alias xc-set-build='agvtool new-version -all'
 alias xc-bump-build='agvtool next-version -all'
+
+# Weather
+alias weather='curl http://wttr.in/szczecin'

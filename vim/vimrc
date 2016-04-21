@@ -158,10 +158,9 @@ filetype plugin indent on
 
 augroup dev_files
   autocmd!
-
-  au FileType java,python,cs set sw=4 sts=4 et
   au BufRead,BufNewFile *.rabl setf ruby
   au BufRead,BufNewFile Podfile set filetype=ruby
+  au FileType java,python,cs,javascript set sw=4 sts=4 et
 augroup END
 
 
