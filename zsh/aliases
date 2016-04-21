@@ -32,6 +32,7 @@ alias cmake='nocorrect cmake'
 # XCode
 alias xc-set-build='agvtool new-version -all'
 alias xc-bump-build='agvtool next-version -all'
+alias xc-resolve-project-conflict='~/Development/dotfiles/xcode-helpers/resolve_pbxproj_conflict_by_union.rb'
 
 # Weather
 alias weather='curl http://wttr.in/szczecin'
