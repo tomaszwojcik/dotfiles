@@ -2,38 +2,20 @@
 
 homebrew_apps=(
 tmux
+reattach-to-user-namespace
 tree
 curl
-wget
 htop
 autojump
-the_silver_searcher
-pgrep
 git
-tig
-svn
-libtiff
-imagemagick
-ghostscript
 macvim
-ruby-install
-chruby
-postgresql
-mysql
-redis
 )
 
 homebrew_cask_apps=(
-vagrant
-tunnelblick
 dropbox
 google-chrome
 google-drive
-skype
-libreoffice
-rescuetime
 dash
-mactex
 )
 
 manual_install_apps=(
