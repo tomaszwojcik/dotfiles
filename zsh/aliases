@@ -33,6 +33,14 @@ alias cmake='nocorrect cmake'
 alias xc-set-build='agvtool new-version -all'
 alias xc-bump-build='agvtool next-version -all'
 alias xc-resolve-project-conflict='~/Development/dotfiles/xcode-helpers/resolve_pbxproj_conflict_by_union.rb'
+alias xc-select-release='sudo xcode-select -s /Applications/Xcode.app/Contents/Developer'
+alias xc-select-beta='sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer'
 
 # Weather
-alias weather='curl http://wttr.in/szczecin'
+function weather() {
+    if [ -z "$1" ]; then
+        curl http://wttr.in/szczecin
+    else
+        curl http://wttr.in/${1}
+    fi
+}
