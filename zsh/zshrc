@@ -1,4 +1,3 @@
-export EDITOR=vim
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -49,48 +48,20 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-# http://bruteforce.gr/installing-mitmproxy-os-x-maverics-bypassing-clang-error-unknown-argument.html
-export ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future
-
-# Includes
-DOTFILES=$HOME/Development/dotfiles
-DOTFILES_ZSH=$DOTFILES/zsh
-source $DOTFILES_ZSH/aliases
-source $DOTFILES_ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+# Locales
 LANG=en_US.UTF-8
 LC_ALL=en_US.UTF-8
 export LANG LC_ALL
 
-# Vi mode
-# http://dougblack.io/words/zsh-vi-mode.html
-# bindkey -v
+# Default editor
+export EDITOR=vim
 
-# function zle-line-init zle-keymap-select {
-#     VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
-#     RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/}$(git_custom_status) $EPS1"
-#     zle reset-prompt
-# }
+# Set root path to dotfiles
+export DOTFILES=$HOME/Tools/dotfiles
 
-# zle -N zle-line-init
-# zle -N zle-keymap-select
-# export KEYTIMEOUT=1
-
- #LaTeX
-eval `/usr/libexec/path_helper -s`
-
-export PATH=$PATH:~/work/tools/android-sdk-macosx/tools:~/work/tools/android-sdk-macosx/platform-tools
+# /usr/local/bin first (for brew version of zsh etc)
 export PATH=/usr/local/bin:$PATH
-export PATH=$PATH:$DOTFILES/scripts
-export IDEA_SDK=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home
 
+# ZSH includes
+source $DOTFILES/zsh/aliases
 
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
-
-# chruby ruby-2.2.2
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
