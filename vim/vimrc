@@ -115,11 +115,12 @@ nmap <Leader>r :RuboCop<CR>
 " there are changes in the current buffer
 set hidden
 
-hi SignColumn ctermbg=7 guibg=#eee9d4
-hi GitGutterAdd ctermbg=7 ctermfg=2 guibg=#eee9d4 guifg=#7ca000
-hi GitGutterDelete ctermbg=7 ctermfg=1 guibg=#eee9d4 guifg=#ed000e
-hi GitGutterChange ctermbg=7 ctermfg=3 guibg=#eee9d4 guifg=#ba8a00
-hi GitGutterChangeDelete ctermbg=7 ctermfg=1 guibg=#eee9d4 guifg=#ed000e
+hi SignColumn ctermbg=7 guibg=#041e23
+hi GitGutterAdd ctermbg=7 ctermfg=2 guibg=#041e23 guifg=#7ca000
+hi GitGutterDelete ctermbg=7 ctermfg=1 guibg=#041e23 guifg=#ed000e
+hi GitGutterChange ctermbg=7 ctermfg=3 guibg=#041e23 guifg=#ba8a00
+hi GitGutterChangeDelete ctermbg=7 ctermfg=1 guibg=#041e23 guifg=#ed000e
+
 
 let g:gitgutter_sign_removed = '-'
 let g:gitgutter_sign_modified = '*'

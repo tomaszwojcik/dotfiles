@@ -9,18 +9,21 @@ htop
 autojump
 git
 macvim
+swiftlint
 )
 
 homebrew_cask_apps=(
-dropbox
-google-chrome
-google-drive
-dash
+#dropbox
+#google-chrome
+#google-drive
+#dash
 )
 
 manual_install_apps=(
 1Password
 Blotter
+ColorSnapper2
+Dash
 )
 
 install_apps() {
