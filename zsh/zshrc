@@ -63,5 +63,8 @@ export DOTFILES=$HOME/Tools/dotfiles
 export PATH=/usr/local/bin:$PATH
 
 # ZSH includes
+source $DOTFILES/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $DOTFILES/zsh/aliases
 
+# Chruby
+source /usr/local/opt/chruby/share/chruby/chruby.sh
