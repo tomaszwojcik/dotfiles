@@ -42,7 +42,7 @@ DISABLE_AUTO_TITLE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git autojump)
+plugins=(git autojump zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -59,12 +59,17 @@ export EDITOR=vim
 # Set root path to dotfiles
 export DOTFILES=$HOME/Tools/dotfiles
 
-# /usr/local/bin first (for brew version of zsh etc)
-export PATH=/usr/local/bin:$PATH
+# Macports
+export PATH=$PATH:/opt/local/bin
+
+# Autojump (Macports)
+export FPATH="$FPATH:/opt/local/share/zsh/site-functions/"
+if [ -f /opt/local/etc/profile.d/autojump.sh ]; then
+    . /opt/local/etc/profile.d/autojump.sh
+fi
+
+autoload -U compinit; compinit
 
 # ZSH includes
 source $DOTFILES/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $DOTFILES/zsh/aliases
-
-# Chruby
-source /usr/local/opt/chruby/share/chruby/chruby.sh
