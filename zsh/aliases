@@ -36,6 +36,8 @@ alias xc-bump-build='agvtool next-version -all'
 alias xc-resolve-project-conflict='~/Development/dotfiles/xcode-helpers/resolve_pbxproj_conflict_by_union.rb'
 alias xc-select-release='sudo xcode-select -s /Applications/Xcode.app/Contents/Developer'
 alias xc-select-beta='sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer'
+alias purge-derived-data='rm -rf ~/Library/Developer/Xcode/DerivedData'
+alias purge-the-unclean='rm -rf ~/Library/Developer/Xcode/DerivedData'
 
 # Weather
 function weather() {
@@ -45,3 +47,7 @@ function weather() {
         curl http://wttr.in/${1}
     fi
 }
+
+# Homebrew
+#
+alias brew_update='brew update && brew upgrade && brew cleanup'
