@@ -286,7 +286,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("PreProc", s:purple, "", "")
 	call <SID>X("Operator", s:aqua, "", "none")
 	call <SID>X("Type", s:blue, "", "none")
-	call <SID>X("Define", s:purple, "", "none")
+	call <SID>X("Define", s:yellow, "", "none")
 	call <SID>X("Include", s:blue, "", "")
 	"call <SID>X("Ignore", "666666", "", "")
 
@@ -316,7 +316,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("rubyCurlyBlock", s:orange, "", "")
 	call <SID>X("rubyStringDelimiter", s:green, "", "")
 	call <SID>X("rubyInterpolationDelimiter", s:orange, "", "")
-	call <SID>X("rubyConditional", s:purple, "", "")
+	call <SID>X("rubyConditional", s:yellow, "", "")
 	call <SID>X("rubyRepeat", s:purple, "", "")
 
 	" Python Highlighting

@@ -51,8 +51,8 @@ onoremap in :<c-u>normal! f(vi(<cr>
 let g:rspec_runner = "os_x_iterm"
 let g:rspec_command = "Dispatch bundle exec rspec {spec}"
 
-map <leader>t :w<CR>:call RunCurrentSpecFile()<CR>
-map <leader>l :w<CR>:call RunNearestSpec()<CR>
+map <leader>t :w<CR>:call RunCurrentTest<CR>
+map <leader>l :w<CR>:call RunCurrentLineInTest()<CR>
 
 " Vim
 map <leader>/ :so ~/.vimrc<cr>:noh<cr>
@@ -182,3 +182,51 @@ function! Retag()
   echom 'Retagged!'
 endfunc
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" RUN TESTS
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap  <leader>t :w<cr>:call RunCurrentTest()<cr>
+nnoremap  <leader>l :w<cr>:call RunCurrentLineInTest()<cr>
+
+function! RunCurrentTest()
+  let in_test_file = match(expand("%"), '\(.feature\|_spec.rb\|_test.rb\)$') != -1
+  if in_test_file
+    call SetTestFile()
+
+    if match(expand('%'), '\.feature$') != -1
+      call SetTestRunner("!cucumber")
+      exec g:bjo_test_runner g:bjo_test_file
+    elseif match(expand('%'), '_spec\.rb$') != -1
+      call SetTestRunner("Dispatch bundle exec rspec -f d")
+      exec g:bjo_test_runner g:bjo_test_file
+    else
+      call SetTestRunner("!test")
+      exec g:bjo_test_runner g:bjo_test_file
+    endif
+  else
+    exec g:bjo_test_runner g:bjo_test_file
+  endif
+endfunction
+
+function! SetTestRunner(runner)
+  let g:bjo_test_runner=a:runner
+endfunction
+
+function! RunCurrentLineInTest()
+  let in_test_file = match(expand("%"), '\(.feature\|_spec.rb\|_test.rb\)$') != -1
+  if in_test_file
+    call SetTestFileWithLine()
+  end
+
+  exec "Dispatch bundle exec rspec -f d" g:bjo_test_file . ":" . g:bjo_test_file_line
+endfunction
+
+function! SetTestFile()
+  let g:bjo_test_file=@%
+endfunction
+
+function! SetTestFileWithLine()
+  let g:bjo_test_file=@%
+  let g:bjo_test_file_line=line(".")
+endfunction
+" }}}
