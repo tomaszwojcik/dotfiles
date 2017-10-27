@@ -47,12 +47,8 @@ let NERDTreeShowHidden=1
 " Movement stuff
 onoremap in :<c-u>normal! f(vi(<cr>
 
-" Run tests
-let g:rspec_runner = "os_x_iterm"
-let g:rspec_command = "Dispatch bundle exec rspec {spec}"
-
-map <leader>t :w<CR>:call RunCurrentTest<CR>
-map <leader>l :w<CR>:call RunCurrentLineInTest()<CR>
+" let g:rspec_runner = "os_x_iterm"
+" let g:rspec_command = "Dispatch bundle exec rspec {spec}"
 
 " Vim
 map <leader>/ :so ~/.vimrc<cr>:noh<cr>
@@ -197,7 +193,7 @@ function! RunCurrentTest()
       call SetTestRunner("!cucumber")
       exec g:bjo_test_runner g:bjo_test_file
     elseif match(expand('%'), '_spec\.rb$') != -1
-      call SetTestRunner("Dispatch bundle exec rspec -f d")
+      call SetTestRunner("Dispatch bundle exec rspec -f d --color")
       exec g:bjo_test_runner g:bjo_test_file
     else
       call SetTestRunner("!test")

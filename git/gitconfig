@@ -6,7 +6,7 @@
   user = tomaszwojcik
 
 [core]
-	excludesfile = /Users/twojcik/.gitignore_global
+	excludesfile = /Users/twojcik/.gitignore
   editor       = vim
   autocrlf = input
 

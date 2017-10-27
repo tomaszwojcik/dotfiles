@@ -1,0 +1,66 @@
+"*":
+  "autocomplete-plus":
+    minimumWordLength: 2
+  "autocomplete-ruby":
+    rsensePath: "/Users/twojcik/.gem/ruby/2.4.1/bin/rsense"
+  "block-cursor":
+    global:
+      blinkOff: {}
+      blinkOn:
+        borderColor: "rgba(0, 0, 0, 0)"
+  core:
+    closeDeletedFileTabs: true
+    packagesWithKeymapsDisabled: [
+      "ruby-test"
+      "symbols-view"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "pristine-ui"
+      "spacedust"
+    ]
+  editor:
+    fontSize: 16
+    preferredLineLength: 120
+  "exception-reporting":
+    userId: "fb675a82-7fcc-eb39-eabb-ea99da0eb576"
+  "linter-rubocop":
+    disableWhenNoConfigFile: true
+  "linter-ui-default":
+    showPanel: true
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "platformio-ide-terminal":
+    ansiColors:
+      normal:
+        black: "#07171b"
+        blue: "#bc4b01"
+        cyan: "#3d8479"
+        green: "#c2a253"
+        magenta: "#0e558c"
+        red: "#cb7636"
+        white: "#0096bc"
+        yellow: "#bfbfbf"
+      zBright:
+        brightBlack: "#6e767b"
+        brightBlue: "#ec5e01"
+        brightCyan: "#52b2a3"
+        brightGreen: "#ffd56d"
+        brightMagenta: "#1587df"
+        brightRed: "#ff9446"
+        brightWhite: "#00ccff"
+        brightYellow: "#e5e5e5"
+    style: {}
+  "ruby-test":
+    minitestAllCommand: "docker-compose exec web bundle exec rake test"
+    minitestFileCommand: "docker-compose exec web bundle exec rake test TEST={relative_path}"
+    testAllCommand: "docker-compose exec web bundle exec rake test"
+    testFileCommand: "docker-compose exec web bundle exec rake test TEST={relative_path}"
+    testSingleCommand: "docker-compose exec web bundle exec rake test TEST={relative_path}:{line_number}"
+  welcome:
+    showOnStartup: false
+".diff.source":
+  editor:
+    showInvisibles: false

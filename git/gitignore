@@ -4,7 +4,13 @@
 # Vim
 *.swp
 *.swo
+.tags
+.ctags
 tags
+ctags
+
+:* # Kiss, just in case if a madman leaves :w in dir
+
 
 # Ruby
 .ruby-version
