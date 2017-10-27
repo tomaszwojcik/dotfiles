@@ -31,14 +31,18 @@
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 'atom-text-editor':
-  # Xcode like navigation
+  # Xcode navigation
   'cmd-u': 'ruby-test:test-file' # run test file
   'cmd-l': 'go-to-line:toggle' # go to line number
   'shift-cmd-o': 'fuzzy-finder:toggle-file-finder' # open file
   'shift-cmd-y': 'platformio-ide-terminal:toggle'
+  # Xcode spliting windows
+  'cmd-enter': 'pane:close-other-items'
+  'alt-cmd-enter': 'pane:split-right-and-copy-active-item'
   # Symbols / Tags
   'cmd-e': 'symbols-view:go-to-declaration'
   'shift-cmd-e': 'symbols-view:return-from-declaration'
+  'cmd-r': 'symbol-gen:generate'
   # Pane navigation
   'ctrl-h': 'window:focus-pane-on-left'
   'ctrl-j': 'window:focus-pane-below'

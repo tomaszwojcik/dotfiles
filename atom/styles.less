@@ -42,6 +42,15 @@ atom-text-editor::shadow .cursor {
   background-color: rgba(6, 73, 111, 0.5);
 }
 
+// Still requires improvements (there is other higlight)
+@treeViewSelectionColor: rgba(236, 198, 89, 0.5);
+.tree-view &.directory.selected > .list-item {
+  background-color: @treeViewSelectionColor;
+}
+.tree-view li.list-item.selected {
+  background-color: @treeViewSelectionColor;
+}
+
 atom-text-editor .gutter {
     background-color: rgba(16, 39, 46, 1);
 }
