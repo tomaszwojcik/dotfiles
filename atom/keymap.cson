@@ -47,3 +47,4 @@
   # General navigation
   'ctrl-f': 'core:page-down'
   'ctrl-b': 'core:page-up'
+  'cmd-n': 'advanced-open-file:toggle'
