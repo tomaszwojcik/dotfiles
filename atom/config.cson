@@ -24,6 +24,7 @@
     preferredLineLength: 120
   "exception-reporting":
     userId: "fb675a82-7fcc-eb39-eabb-ea99da0eb576"
+  "file-icons": {}
   "git-diff": {}
   "highlight-line":
     hideHighlightOnSelect: true
