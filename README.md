@@ -9,44 +9,6 @@ Download the XCode and install it's command line tools.
 
 ## Installation
 
-Set the `DOTFILES` (default: `~/work/dotfiles`) variable in the `setup.sh` script and simply run the script on your fresh OS installation.
-
-The script will automatically install:
-
-* [Homebrew](http://brew.sh/)
-* [oh my zsh](https://github.com/robbyrussell/oh-my-zsh)
-* [tmux](http://tmux.sourceforge.net/)
-* [autojump](https://github.com/joelthelion/autojump)
-* [git](http://git-scm.com/) (Mac's is outdated)
-* svn
-* tree
-* [ImageMagick](http://www.imagemagick.org/)
-* [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)
-* [Mac Vim](https://code.google.com/p/macvim/)
-* [ruby-install](https://github.com/postmodern/ruby-install)
-* [chruby](https://github.com/postmodern/chruby)
-* [Ruby: 1.9.3, 2.0, 2.1](https://www.ruby-lang.org)
+Set the `DOTFILES` evnironment variable and run the script on your fresh macOS installation.
 
 Change `/etc/paths` so the `/usr/local/bin` will be at first place.
-
-## Manual installation
-
-Tools that I install manually (give them a try):
-
-* [1Password](https://agilebits.com/onepassword)
-* [RescueTime](https://www.rescuetime.com) - time management
-* [Tunnelblick](https://code.google.com/p/tunnelblick/) - VPN
-* [Dash](http://kapeli.com/dash) - offline documentation
-* [Blotter](http://wireload.net/products/blotter/) - decent calendar
-* [P4Merge](http://www.perforce.com/product/components/perforce-visual-merge-and-diff-tools) - for merging conflicts
-
-Last things to do:
-
-* Enable Mac OS X File Vault
-* Enable Mac OS X firewall
-
-## TODO
-
-* Databases setup (postgres, mysql, reds)
-* Split scripts: terminal/env/tools setup, ruby-setup
-* wget

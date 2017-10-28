@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
-DOTFILES="$HOME/Development/dotfiles"
+if [ -z "$DOTFILES" ]; then
+    echo "Set `DOTFILES2` before running this script"
+    exit 1
+fi
 
-declare -a RUBY_VERSIONS=("1.9.3" "2.0" "2.1")
-BREW_APPS="tmux tree macvim ruby-install chruby autojump mercurial git svn"
+declare -a RUBY_VERSIONS=("2.4.2")
+BREW_APPS="tmux tree macvim ruby-install chruby autojump git tldr watch curl ag ctags cocoapods carthage"
 
 main() {
   if [[ $OSTYPE != *darwin* ]]; then
@@ -14,8 +17,7 @@ main() {
   mac_install_zsh
   mac_install_oh_my_zsh
   mac_install_brew_apps
-  mac_install_imagemagick
-  mac_install_rubies
+  mac_install_ruby
   setup_zsh
   setup_tmux
   setup_vim
@@ -41,12 +43,7 @@ mac_install_brew_apps() {
   brew install $BREW_APPS
 }
 
-mac_install_imagemagick() {
-  brew install libtiff
-  brew install imagemagick
-}
-
-mac_install_rubies() {
+mac_install_ruby() {
   rubies_str=`IFS=,; echo "${RUBY_VERSIONS[*]}"`
   echo "Installing ruby versions: $rubies_str"
   for ruby in ${RUBY_VERSIONS[@]}
@@ -90,8 +87,16 @@ setup_vim() {
 
 setup_git() {
   echo "Linking Git configuration."
+  rm -f "$HOME/.gitignore"
+  rm -f "$HOME/.gitconfig"
   slnk "$DOTFILES/git/gitignore" "$HOME/.gitignore"
   slnk "$DOTFILES/git/gitconfig" "$HOME/.gitconfig"
+  git config --global core.excludesfile ~/.gitignore
+}
+
+setup_atom() {
+  echo "Linking Atom configuration."
+  slnk "$DOTFILES/git"
 }
 
 slnk() {
