@@ -24,9 +24,11 @@
     preferredLineLength: 120
   "exception-reporting":
     userId: "fb675a82-7fcc-eb39-eabb-ea99da0eb576"
+  "git-diff": {}
+  "highlight-line":
+    hideHighlightOnSelect: true
   "linter-rubocop": {}
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   minimap:
     plugins:
       "highlight-selected": true

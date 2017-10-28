@@ -17,7 +17,7 @@
 
 // style the background color of the tree view
 .tree-view {
-  // background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
 // style the background and foreground colors on the atom-text-editor-element itself
@@ -39,17 +39,17 @@ atom-text-editor::shadow .cursor {
 }
 
 .editor .selection .region {
-  background-color: rgba(6, 73, 111, 0.5);
+  background-color: rgba(10, 56, 92, 1);
 }
 
 // Still requires improvements (there is other higlight)
-@treeViewSelectionColor: rgba(236, 198, 89, 0.5);
-.tree-view &.directory.selected > .list-item {
-  background-color: @treeViewSelectionColor;
-}
-.tree-view li.list-item.selected {
-  background-color: @treeViewSelectionColor;
-}
+// @treeViewSelectionColor: rgba(5, 37, 51, 0.5);
+// .tree-view &.directory.selected > .list-item {
+//   background-color: @treeViewSelectionColor;
+// }
+// .tree-view li.list-item.selected {
+//   background-color: @treeViewSelectionColor;
+// }
 
 atom-text-editor .gutter {
     background-color: rgba(16, 39, 46, 1);
