@@ -10,6 +10,9 @@
         borderColor: "rgba(0, 0, 0, 0)"
   core:
     closeDeletedFileTabs: true
+    disabledPackages: [
+      "open-on-github"
+    ]
     packagesWithKeymapsDisabled: [
       "ruby-test"
       "symbols-view"
@@ -55,12 +58,14 @@
         brightWhite: "#00ccff"
         brightYellow: "#e5e5e5"
     style: {}
+  "project-manager":
+    environmentSpecificProjects: true
   "ruby-test":
-    minitestAllCommand: "docker-compose exec web bundle exec rake test"
-    minitestFileCommand: "docker-compose exec web bundle exec rake test TEST={relative_path}"
-    testAllCommand: "docker-compose exec web bundle exec rake test"
-    testFileCommand: "docker-compose exec web bundle exec rake test TEST={relative_path}"
-    testSingleCommand: "docker-compose exec web bundle exec rake test TEST={relative_path}:{line_number}"
+    minitestAllCommand: ""
+    minitestFileCommand: ""
+    testAllCommand: ""
+    testFileCommand: ""
+    testSingleCommand: ""
   welcome:
     showOnStartup: false
 ".diff.source":

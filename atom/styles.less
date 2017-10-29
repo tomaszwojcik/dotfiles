@@ -9,19 +9,39 @@
  * http://lesscss.org
  */
 
+ @highlightLineColor: rgba(236, 198, 89, 5%);
 
-/*
- * Examples
- * (To see them, uncomment and save)
- */
+// Editor Highlight line
+atom-text-editor {
+  .line.highlight-line {
+    background: @highlightLineColor !important;
+  }
+}
 
-// style the background color of the tree view
+// Tree view styling
 .tree-view {
-  background-color: whitesmoke;
+  font-family: 'SF Mono';
+  letter-spacing: -1px;
+
+  // .icon-file-directory {
+  //   color: rgb(1, 157, 197);
+  // }
+}
+
+.tree-view:not(.nuclide-file-tree) {
+  font-size: 15px;
+  background: rgb(9, 23, 27);
+
+  .selected {
+    &:before {
+      background: @highlightLineColor;
+    }
+  }
 }
 
 // style the background and foreground colors on the atom-text-editor-element itself
 atom-text-editor {
+  font-family: 'SF Mono';
   // color: white;
   // background-color: hsl(180, 24%, 12%);
 }
@@ -34,22 +54,11 @@ atom-text-editor::shadow .cursor {
 .editor .cursor {
    position: absolute;
    border-color: rgba(240, 242, 204, 1)
-  //  border: 0px solid;
-  //  background-color: rgba(236, 241, 191, 0.5)
 }
 
 .editor .selection .region {
   background-color: rgba(10, 56, 92, 1);
 }
-
-// Still requires improvements (there is other higlight)
-// @treeViewSelectionColor: rgba(5, 37, 51, 0.5);
-// .tree-view &.directory.selected > .list-item {
-//   background-color: @treeViewSelectionColor;
-// }
-// .tree-view li.list-item.selected {
-//   background-color: @treeViewSelectionColor;
-// }
 
 atom-text-editor .gutter {
     background-color: rgba(16, 39, 46, 1);

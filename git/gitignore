@@ -8,6 +8,7 @@
 .ctags
 tags
 ctags
+.tags_swap
 
 :* # Kiss, just in case if a madman leaves :w in dir
 
