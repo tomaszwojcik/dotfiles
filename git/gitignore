@@ -17,6 +17,10 @@ ctags
 .ruby-version
 .env
 
+# Ruby zeus
+custom_plan.rb
+zeus.json
+
 # C-like
 *.obj
 *.o

@@ -30,10 +30,13 @@
   "file-icons": {}
   "git-diff": {}
   "highlight-line":
+    enableBackgroundColor: false
     hideHighlightOnSelect: true
-  "linter-rubocop": {}
+  "linter-rubocop":
+    disableWhenNoConfigFile: true
   "linter-ui-default": {}
   minimap:
+    moveCursorOnMinimapClick: true
     plugins:
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
