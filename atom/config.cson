@@ -23,18 +23,21 @@
       "spacedust"
     ]
   editor:
-    fontSize: 16
+    fontSize: 17
     preferredLineLength: 120
   "exception-reporting":
     userId: "fb675a82-7fcc-eb39-eabb-ea99da0eb576"
   "file-icons": {}
+  "git-blame":
+    columnWidth: 355
   "git-diff": {}
   "highlight-line":
     enableBackgroundColor: false
     hideHighlightOnSelect: true
   "linter-rubocop":
     disableWhenNoConfigFile: true
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 164
   minimap:
     moveCursorOnMinimapClick: true
     plugins:
@@ -65,10 +68,13 @@
     environmentSpecificProjects: true
   "ruby-test":
     minitestAllCommand: ""
-    minitestFileCommand: ""
+    minitestFileCommand: "docker-compose exec web bin/rails test {relative_path}"
+    minitestSingleCommand: "docker-compose exec web bin/rails test {relative_path}:{line_number}"
     testAllCommand: ""
     testFileCommand: ""
     testSingleCommand: ""
+  tablr:
+    copyPaste: {}
   welcome:
     showOnStartup: false
 ".diff.source":

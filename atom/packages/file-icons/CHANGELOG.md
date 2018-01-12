@@ -3,7 +3,35 @@ Change Log
 All notable changes to the project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-[Unpublished]: https://github.com/file-icons/atom/compare/v2.1.13...HEAD
+[Unpublished]: https://github.com/file-icons/atom/compare/v2.1.15...HEAD
+
+
+[v2.1.15] - 2017-12-15
+----------------------
+### Added
+- **New icons:** Robots (`robots.txt`)
+- **Support:** AppVeyor (`.appveyor.yml`), Bundler (`.gemfile`), Data (`.hson`)
+
+### Fixed
+- [[`#685`][]]: Error thrown when displaying MRU list with a blank tab open
+
+[v2.1.15]: https://github.com/file-icons/atom/releases/tag/v2.1.15
+[`#685`]: https://github.com/file-icons/atom/issues/685
+
+
+
+[v2.1.14] - 2017-11-20
+----------------------
+### Added
+- **New icons:** Browsersync (`bs-config.js`, `browser-sync.js`), Caffe (`.caffemodel`, `.solverstate`), CWL (`.cwl`), Imba (`.imba`), Prettier (`.prettierrc.{js,json,yaml,yml}`), Reek (`.reek`), YAML (`.yml`, `.yaml`), YARA (`.yar`, `.yara`)
+- **Support:** 3D Asset (`.rviz`, `.vcg`), Bazel (`BUILD.bazel`), Checklist (`.todo`, `.taskpaper`), Dashboard (`.cloc`), Data (`.webmanifest`), Doxygen (`.Doxygen`)
+
+### Fixed
+- [[`#657`][]]: Strange clipping of circular icons on High Sierra
+
+[v2.1.14]: https://github.com/file-icons/atom/releases/tag/v2.1.14
+[`#657`]: https://github.com/file-icons/atom/issues/657
+
 
 
 [v2.1.13] - 2017-10-11
