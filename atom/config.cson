@@ -33,11 +33,11 @@
   "git-diff": {}
   "highlight-line":
     enableBackgroundColor: false
+    enableSelectionBorder: true
     hideHighlightOnSelect: true
   "linter-rubocop":
     disableWhenNoConfigFile: true
-  "linter-ui-default":
-    panelHeight: 164
+  "linter-ui-default": {}
   minimap:
     moveCursorOnMinimapClick: true
     plugins:

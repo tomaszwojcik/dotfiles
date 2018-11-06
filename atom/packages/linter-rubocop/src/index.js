@@ -6,6 +6,7 @@ import path from 'path'
 import pluralize from 'pluralize'
 import * as helpers from 'atom-linter'
 import { get } from 'request-promise'
+import semver from 'semver'
 
 const DEFAULT_ARGS = [
   '--cache', 'false',
@@ -16,6 +17,7 @@ const DEFAULT_ARGS = [
 const DOCUMENTATION_LIFETIME = 86400 * 1000 // 1 day TODO: Configurable?
 
 const docsRuleCache = new Map()
+const execPathVersions = new Map()
 let docsLastRetrieved
 
 const takeWhile = (source, predicate) => {
@@ -44,7 +46,6 @@ const parseFromStd = (stdout, stderr) => {
 
 const getProjectDirectory = filePath =>
   atom.project.relativizePath(filePath)[0] || path.dirname(filePath)
-
 
 // Retrieves style guide documentation with cached responses
 const getMarkDown = async (url) => {
@@ -110,7 +111,7 @@ const forwardRubocopToLinter =
 
     const linterMessage = {
       url,
-      excerpt: `${excerpt} (${copName})`,
+      excerpt: `${copName}: ${excerpt}`,
       severity: severityMapping[severity],
       description: url ? () => getMarkDown(url) : null,
       location: {
@@ -120,6 +121,31 @@ const forwardRubocopToLinter =
     }
     return linterMessage
   }
+
+const determineExecVersion = async (execPath) => {
+  const versionString = await helpers.exec(execPath, ['--version'], { ignoreExitCode: true })
+  const versionPattern = /^(\d+\.\d+\.\d+)/i
+  const match = versionString.match(versionPattern)
+  if (match !== null && match[1]) {
+    execPathVersions.set(execPath, match[1])
+  }
+}
+
+const getRubocopVersion = async (execPath) => {
+  if (!execPathVersions.has(execPath)) {
+    await determineExecVersion(execPath)
+  }
+  return execPathVersions.get(execPath)
+}
+
+const getCopNameArg = async (execPath) => {
+  const version = await getRubocopVersion(execPath)
+  if (semver.gte(version, '0.52.0')) {
+    return ['--no-display-cop-names']
+  }
+
+  return []
+}
 
 export default {
   activate() {
@@ -139,10 +165,15 @@ export default {
           }
 
           const filePath = textEditor.getPath()
+          if (!filePath) { return null }
+
           const command = this.command
             .split(/\s+/)
             .filter(i => i)
-            .concat(DEFAULT_ARGS, '--auto-correct', filePath)
+            .concat(DEFAULT_ARGS, '--auto-correct')
+          command.push(...(await getCopNameArg(command[0])))
+          command.push(filePath)
+
           const cwd = getProjectDirectory(filePath)
           const { stdout, stderr } = await helpers.exec(command[0], command.slice(1), { cwd, stream: 'both' })
           const { summary: { offense_count: offenseCount } } = parseFromStd(stdout, stderr)
@@ -178,6 +209,7 @@ export default {
       lintsOnChange: true,
       lint: async (editor) => {
         const filePath = editor.getPath()
+        if (!filePath) { return null }
 
         if (this.disableWhenNoConfigFile === true) {
           const config = await helpers.findAsync(filePath, '.rubocop.yml')
@@ -189,7 +221,9 @@ export default {
         const command = this.command
           .split(/\s+/)
           .filter(i => i)
-          .concat(DEFAULT_ARGS, '--stdin', filePath)
+          .concat(DEFAULT_ARGS)
+        command.push(...(await getCopNameArg(command[0])))
+        command.push('--stdin', filePath)
         const stdin = editor.getText()
         const cwd = getProjectDirectory(filePath)
         const exexOptions = {

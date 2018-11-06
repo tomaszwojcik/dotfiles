@@ -39,6 +39,8 @@ alias xc-select-beta='sudo xcode-select -s /Applications/Xcode-beta.app/Contents
 alias purge-derived-data='rm -rf ~/Library/Developer/Xcode/DerivedData'
 alias purge-the-unclean='rm -rf ~/Library/Developer/Xcode/DerivedData'
 
+alias gcc=gcc-4.9
+
 # Weather
 function weather() {
     if [ -z "$1" ]; then
@@ -51,3 +53,5 @@ function weather() {
 # Homebrew
 #
 alias brew_update='brew update && brew upgrade && brew cleanup'
+
+# React Native

@@ -5,7 +5,15 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="arrow"
+# ZSH_THEME="arrow"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vcs)
+
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_last"
+# POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
+# POWERLEVEL9K_SHORTEN_DELIMITER=""
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -58,9 +66,6 @@ export EDITOR=vim
 # Set root path to dotfiles
 export DOTFILES=$HOME/Tools/dotfiles
 
-# Homebrew
-export PATH=/usr/local/bin:$PATH
-
 # Autojump (Brew)
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
@@ -74,7 +79,26 @@ chruby 2.4.1
 source $DOTFILES/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $DOTFILES/zsh/aliases
 
-# Android
-export ANDROID_HOME=/Users/$USER/Library/Android/sdk
-export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+# QT
+export PATH=$PATH:$HOME/Qt/5.11.1/clang_64/bin:$HOME/Qt/Tools/QtInstallerFramework/3.0/bin
 
+# Android
+export ANDROID_AVD_HOME=~/.android/avd
+export ANDROID_HOME=~/Library/Android/sdk
+export ANDROID_SDK_HOME=~/Library/Android/sdk
+export PATH=$PATH:$ANDROID_SDK_HOME/emulator:$ANDROID_SDK_HOME/tools/bin:$ANDROID_SDK_HOME/tools
+
+# Visual Studio Code
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+# Homebrew
+export PATH=/usr/local/bin:$PATH
+
+# ReactNative
+function rn-clean() {
+  watchman watch-del-all
+  rm -rf $TMPDIR/react-*
+  rm -rf $TMPDIR/haste-*
+  rm -rf $TMPDIR/metro-*
+  npm start -- --reset-cache
+}
