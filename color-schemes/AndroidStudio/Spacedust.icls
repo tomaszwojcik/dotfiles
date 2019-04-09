@@ -1,10 +1,10 @@
 <scheme name="Spacedust" version="142" parent_scheme="Default">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
-    <property name="created">2019-04-09T11:10:54</property>
+    <property name="created">2019-04-09T11:30:19</property>
     <property name="ide">AndroidStudio</property>
     <property name="ideVersion">3.3.2.0</property>
-    <property name="modified">2019-04-09T11:11:00</property>
+    <property name="modified">2019-04-09T11:30:22</property>
     <property name="originalScheme">Spacedust</property>
   </metaInfo>
   <option name="LINE_SPACING" value="0.99" />
@@ -32,7 +32,7 @@
   <attributes>
     <option name="ANNOTATION_NAME_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="9fc5" />
+        <option name="FOREGROUND" value="9699d" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -155,6 +155,12 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
+    <option name="DEFAULT_DOC_COMMENT_TAG_VALUE">
+      <value>
+        <option name="FOREGROUND" value="ca763c" />
+        <option name="FONT_TYPE" value="3" />
+      </value>
+    </option>
     <option name="DEFAULT_DOC_MARKUP">
       <value />
     </option>
@@ -171,17 +177,18 @@
     </option>
     <option name="DEFAULT_FUNCTION_DECLARATION">
       <value>
-        <option name="FOREGROUND" value="9fc5" />
+        <option name="FOREGROUND" value="ecf0c1" />
       </value>
     </option>
     <option name="DEFAULT_GLOBAL_VARIABLE">
       <value>
         <option name="FOREGROUND" value="ca763c" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="DEFAULT_IDENTIFIER">
       <value>
-        <option name="FOREGROUND" value="e35b00" />
+        <option name="FOREGROUND" value="e46c16" />
       </value>
     </option>
     <option name="DEFAULT_INSTANCE_FIELD">
@@ -208,7 +215,7 @@
     </option>
     <option name="DEFAULT_LOCAL_VARIABLE">
       <value>
-        <option name="FOREGROUND" value="ca763c" />
+        <option name="FOREGROUND" value="ecf0c1" />
       </value>
     </option>
     <option name="DEFAULT_NUMBER">
@@ -218,7 +225,7 @@
     </option>
     <option name="DEFAULT_REASSIGNED_LOCAL_VARIABLE">
       <value>
-        <option name="FOREGROUND" value="ca763c" />
+        <option name="FOREGROUND" value="ecf0c1" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -243,7 +250,7 @@
     </option>
     <option name="DEFAULT_TEMPLATE_LANGUAGE_COLOR">
       <value>
-        <option name="FOREGROUND" value="4a9d8f" />
+        <option name="FOREGROUND" value="9699d" />
       </value>
     </option>
     <option name="DEFAULT_VALID_STRING_ESCAPE">
@@ -494,6 +501,11 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
+    <option name="LOCAL_VARIABLE_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="ecf0c1" />
+      </value>
+    </option>
     <option name="MACRONAME">
       <value>
         <option name="FOREGROUND" value="9699d" />
@@ -518,7 +530,6 @@
     </option>
     <option name="NOT_USED_ELEMENT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="cb7636" />
         <option name="EFFECT_COLOR" value="ebc562" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
@@ -598,6 +609,12 @@
     <option name="PROTOCOL_REFERENCE">
       <value>
         <option name="FOREGROUND" value="e35b00" />
+      </value>
+    </option>
+    <option name="REASSIGNED_LOCAL_VARIABLE_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="ecf0c1" />
+        <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="REGEXP.CHAR_CLASS">
