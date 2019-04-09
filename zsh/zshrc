@@ -12,6 +12,8 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vcs)
 
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_last"
+
+POWERLEVEL9K_COLOR_SCHEME='light'
 # POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 # POWERLEVEL9K_SHORTEN_DELIMITER=""
 
@@ -80,13 +82,16 @@ source $DOTFILES/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $DOTFILES/zsh/aliases
 
 # QT
-export PATH=$PATH:$HOME/Qt/5.11.1/clang_64/bin:$HOME/Qt/Tools/QtInstallerFramework/3.0/bin
+export PATH=$PATH:$HOME/Qt/5.12.0/clang_64/bin:$HOME/Qt/Tools/QtInstallerFramework/3.0/bin
 
 # Android
 export ANDROID_AVD_HOME=~/.android/avd
 export ANDROID_HOME=~/Library/Android/sdk
 export ANDROID_SDK_HOME=~/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_HOME/emulator:$ANDROID_SDK_HOME/tools/bin:$ANDROID_SDK_HOME/tools
+
+# Vortex
+source $DOTFILES/zsh/vortex/android_envs
 
 # Visual Studio Code
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
