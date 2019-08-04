@@ -75,7 +75,7 @@ autoload -U compinit; compinit
 
 # Chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
-chruby 2.4.1
+chruby 2.6.3
 
 # ZSH includes
 source $DOTFILES/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -100,10 +100,13 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 export PATH=/usr/local/bin:$PATH
 
 # ReactNative
-function rn-clean() {
-  watchman watch-del-all
-  rm -rf $TMPDIR/react-*
-  rm -rf $TMPDIR/haste-*
-  rm -rf $TMPDIR/metro-*
-  npm start -- --reset-cache
-}
+# function rn-clean() {
+#   watchman watch-del-all
+#   rm -rf $TMPDIR/react-*
+#   rm -rf $TMPDIR/haste-*
+#   rm -rf $TMPDIR/metro-*
+#   npm start -- --reset-cache
+# }
+
+# Flutter
+export PATH="$PATH:/$HOME//Development/flutter/bin"
