@@ -1,66 +1,57 @@
 [user]
-  name = Tomasz Wójcik
-  email = wojcik.tomek@gmail.com
+	name = Tomasz Wójcik
+	email = wojcik.tomek@gmail.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDTzXkMPfN+vu9J74U53al/xn23g3uYDSkD7m6/o580n
+
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+	gpgsign = true
+
+[rebase]
+	gpgsign = true
 
 [github]
-  user = tomaszwojcik
+	user = tomaszwojcik
 
 [core]
 	excludesfile = /Users/twojcik/.gitignore
-  editor       = vim
-  autocrlf = input
-
-[merge]
-	tool = Kaleidoscope
+	editor = nvim
+	autocrlf = input
 
 [push]
-  default = simple
+	default = simple
+
+[pull]
+	rebase = true
 
 [color]
-  ui = auto
+	ui = auto
 
 [color "diff"]
-  meta       = yellow
-  frag       = magenta
-  old        = red
-  new        = green
-  whitespace = red reverse
+	meta       = yellow
+	frag       = magenta
+	old        = red
+	new        = green
+	whitespace = red reverse
 
 [color "status"]
-  added     = green
-  changed   = yellow
-  untracked = red
+	added     = green
+	changed   = yellow
+	untracked = red
 
 [alias]
-  st   = status -sb
-  ci   = commit
-  br   = branch
-  co   = checkout
-  df   = diff
-  dc   = diff --cached
-  lgp  = log -p
-  lolp = log --graph --pretty=format:\"%C(yellow)%h %Cblue%ad %C(green)%cn %Creset%s%Cred%d\" --date=short
-  # lolp = log --graph --pretty=format:\"%C(yellow)%h %Cblue%ad %C(green)%cn %Creset%s%Cred%d\" --date=format:\"%d.%m.%Y %H:%M\"
-
-  ls   = ls-files
-  undo = reset --soft HEAD^
-  a    = add -A
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustexitcode = true
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[difftool]
-	prompt = false
-[mergetool]
-	prompt = false
-[diff]
-  tool = Kaleidoscope
-
-[mergetool "mergepbx"]
-  cmd = mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
-
-# driver for merging Xcode project files
-[merge "mergepbx"]
-  name = Xcode project files merger
-  driver = mergepbx %O %A %B
+	st   = status -sb
+	ci   = commit
+	br   = branch
+	co   = checkout
+	df   = diff
+	dc   = diff --cached
+	lgp  = log -p
+	lolp = log --graph --pretty=format:\"%C(yellow)%h %Cblue%ad %C(green)%cn %Creset%s%Cred%d\" --date=short
+	ls   = ls-files
+	a    = add -A
