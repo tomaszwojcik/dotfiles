@@ -62,9 +62,9 @@ eval "$(/opt/homebrew/bin/brew shellenv 2>/dev/null || /usr/local/bin/brew shell
 # 2. Install base tools
 # -----------------------------
 brew update
-brew install git autojump asdf
+brew install git autojump asdf 1password-cli
 
-log "Installed: git, autojump, asdf"
+log "Installed: git, autojump, asdf, 1Password CLI (op)"
 
 # -----------------------------
 # 3. oh-my-zsh
