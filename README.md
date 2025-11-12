@@ -1,14 +1,6 @@
-Mac OS X setup script
-========
+Just run:
 
-Configuration files and system setup script (mainly for ruby developers).
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/tomaszwojcik/dotfiles/main/bootstrap.sh)"
+```
 
-## Pre-installation requirements
-
-Download the XCode and install it's command line tools.
-
-## Installation
-
-Set the `DOTFILES` evnironment variable and run the script on your fresh macOS installation.
-
-Change `/etc/paths` so the `/usr/local/bin` will be at first place.
